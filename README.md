@@ -4,7 +4,7 @@ Generates kanji files for the `show-furigana` project.
 ## Usage
 1. Obtain a legal `kanjidic2.xml` file.
 2. Run `node src/index.js <path to the kanjidic2.xml file>`.
-3. The generated files will be saved inside `output` directory in a current
+3. The generated files will be saved inside `_kanji` directory in a current
     working directory.
 
 ## Notes

@@ -5,7 +5,7 @@ const uglifyJS = require('uglify-js')
 const { XMLParser } = require('fast-xml-parser')
 
 const input = process.argv[2]
-const outputDirectory = path.join(process.cwd(), 'output')
+const outputDirectory = path.join(process.cwd(), '_kanji')
 
 if (!input) {
   console.error('You have to specify a kanjidic2.xml file to process.')
@@ -84,7 +84,7 @@ function getStrokesCount(entry) {
 
 function generateFiles(entries) {
   return entries.map(entry => ({
-    path: path.join(outputDirectory, `${entry.kanji}.js`),
+    path: path.join(outputDirectory, `_${entry.kanji}.js`),
     contents: generateFileContents(entry)
   }))
 }
