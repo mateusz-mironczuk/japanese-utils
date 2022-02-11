@@ -16,22 +16,19 @@ if (!input) {
 function run(input) {
   fs
     .readFile(input, 'utf-8')
-    .then(removeDoctype)
+    .then(removeUnsupportedDoctype)
     .then(generateKanjiList)
     .then(generateFiles)
     .then(writeOutput)
 }
 
-function removeDoctype(contents) {
+function removeUnsupportedDoctype(contents) {
   const start = contents.indexOf('<kanjidic2>')
   return contents.substring(start)
 }
 
 function generateKanjiList(contents) {
-  const xmlParser = new XMLParser({
-    ignoreAttributes: false
-  })
-  return xmlParser
+  return new XMLParser({ ignoreAttributes: false })
     .parse(contents)
     .kanjidic2.character
     .filter(filterOnlyKanjisFromRTKList)
@@ -87,7 +84,7 @@ function getStrokesCount(entry) {
 
 function generateFiles(entries) {
   return entries.map(entry => ({
-    fileName: entry.kanji + '.js',
+    path: path.join(outputDirectory, `${entry.kanji}.js`),
     contents: generateFileContents(entry)
   }))
 }
@@ -107,11 +104,6 @@ function writeOutput(files) {
 }
 
 function writeFiles(files) {
-  const promises = files.map(writeFile)
+  const promises = files.map(file => fs.writeFile(file.path, file.contents))
   return Promise.all(promises)
-}
-
-function writeFile(file) {
-  const filePath = path.join(outputDirectory, file.fileName)
-  return fs.writeFile(filePath, file.contents)
 }
