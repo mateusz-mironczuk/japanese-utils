@@ -1,11 +1,12 @@
-const fs = require('fs/promises')
-const path = require('path')
-const rtkKanjiList = require('./rtk-kanji-list.json')
-const uglifyJS = require('uglify-js')
-const { XMLParser } = require('fast-xml-parser')
+import fs from 'fs/promises'
+import path from 'path'
+import rtkKanjiList from './rtk-kanji-list.js'
+import uglifyJS from 'uglify-js'
+import { XMLParser } from 'fast-xml-parser'
 
 const input = process.argv[2]
-const outputDirectory = path.join(process.cwd(), '_kanji')
+const cwd = process.cwd()
+const outputDirectory = path.join(cwd, '_kanji')
 
 if (!input) {
   console.error('You have to specify a kanjidic2.xml file to process.')
@@ -13,13 +14,12 @@ if (!input) {
   run(input)
 }
 
-function run(input) {
-  fs
-    .readFile(input, 'utf-8')
-    .then(removeUnsupportedDoctype)
-    .then(generateKanjiList)
-    .then(generateFiles)
-    .then(writeOutput)
+async function run(input) {
+  const contents = await fs.readFile(input, 'utf-8')
+  const cleared = removeUnsupportedDoctype(contents)
+  const kanjis = generateKanjiList(cleared)
+  const files = generateFiles(kanjis)
+  writeOutput(files)
 }
 
 function removeUnsupportedDoctype(contents) {
@@ -31,12 +31,8 @@ function generateKanjiList(contents) {
   return new XMLParser({ ignoreAttributes: false })
     .parse(contents)
     .kanjidic2.character
-    .filter(filterOnlyKanjisFromRTKList)
+    .filter(({ literal }) => literal in rtkKanjiList)
     .map(simplify)
-}
-
-function filterOnlyKanjisFromRTKList(entry) {
-  return typeof rtkKanjiList[entry.literal] !== 'undefined'
 }
 
 function simplify(entry) {
@@ -51,9 +47,8 @@ function simplify(entry) {
 }
 
 function getUCSCodepoint(entry) {
-  const found = entry.codepoint.cp_value
-    .find(item => item['@_cp_type'] === 'ucs')
-  return found['#text']
+  return entry.codepoint.cp_value
+    .find(item => item['@_cp_type'] === 'ucs')['#text']
 }
 
 function getOmReadings(entry) {
@@ -69,22 +64,21 @@ function getKunReadings(entry) {
 }
 
 function getMeaning(entry) {
-  const meaning = entry.reading_meaning.rmgroup.meaning
-  return typeof meaning === 'string'
-    ? [meaning]
-    : meaning.filter(item => typeof item === 'string')
+  return Array
+    .of(entry.reading_meaning.rmgroup.meaning)
+    .flat()
+    .filter(item => typeof item === 'string')
 }
 
 function getStrokesCount(entry) {
-  const strokes = entry.misc.stroke_count
-  return typeof strokes === 'number'
-    ? [strokes]
-    : strokes
+  return Array
+    .of(entry.misc.stroke_count)
+    .flat()
 }
 
 function generateFiles(entries) {
   return entries.map(entry => ({
-    path: path.join(outputDirectory, `_${entry.kanji}.js`),
+    path: path.join(outputDirectory, `_kanji_${entry.kanji}.js`),
     contents: generateFileContents(entry)
   }))
 }
@@ -92,9 +86,7 @@ function generateFiles(entries) {
 function generateFileContents(entry) {
   const stringified = JSON.stringify(entry)
   const contents = `window.Kanjis['${entry.kanji}'] = ${stringified}`
-  return uglifyJS
-    .minify(contents)
-    .code
+  return uglifyJS.minify(contents).code
 }
 
 function writeOutput(files) {
