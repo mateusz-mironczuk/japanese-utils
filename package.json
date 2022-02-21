@@ -1,5 +1,5 @@
 {
-  "name": "kanji-files-generator",
+  "name": "japanese-utils",
   "version": "1.0.0",
   "description": "Generates kanji files for the 'show-furigana' project.",
   "main": "src/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mateusz-mironczuk/kanji-files-generator.git"
+    "url": "git+https://github.com/mateusz-mironczuk/japanese-utils.git"
   },
   "author": "Mateusz Mirończuk <dev.mironczuk@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mateusz-mironczuk/kanji-files-generator/issues"
+    "url": "https://github.com/mateusz-mironczuk/japanese-utils/issues"
   },
-  "homepage": "https://github.com/mateusz-mironczuk/kanji-files-generator#readme",
+  "homepage": "https://github.com/mateusz-mironczuk/japanese-utils#readme",
   "devDependencies": {
     "eslint": "^8.8.0",
     "husky": "^7.0.4",
