@@ -1,6 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
-import rtkKanjiList from './rtk-kanji-list.js'
+import rtkKanjiList from './modules/rtk-kanji-list.js'
 import uglifyJS from 'uglify-js'
 import { XMLParser } from 'fast-xml-parser'
 
