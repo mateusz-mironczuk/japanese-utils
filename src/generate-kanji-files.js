@@ -1,6 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
-import rtkKanjiList from './rtk-kanji-list.js'
+import rtkKanjiList from './modules/rtk-kanji-list.js'
 import uglifyJS from 'uglify-js'
 import { XMLParser } from 'fast-xml-parser'
 
@@ -89,10 +89,9 @@ function generateFileContents(entry) {
   return uglifyJS.minify(contents).code
 }
 
-function writeOutput(files) {
-  return fs
-    .mkdir(outputDirectory, { recursive: true })
-    .then(() => writeFiles(files))
+async function writeOutput(files) {
+  await fs.mkdir(outputDirectory, { recursive: true })
+  await writeFiles(files)
 }
 
 function writeFiles(files) {
