@@ -27,7 +27,7 @@ Filters kanji SVG files to the most common ones.
 1. Obtain a legal [Kanji SVG project's](http://kanjivg.tagaini.net/) SVG files.
 2. Run `node src/filter-kanji-svg.js <path to a directory with the SVG files>`.
 3. The filtered files will be saved inside `_svg` directory in a current
-    working directory.
+    working directory. File names are preceded with an underscore character.
 
 ## Acknowledgements
 The *Remembering the Kanji* characters list is based on [this thread](https://www.reddit.com/r/LearnJapanese/comments/1a126a/all_2200_kanji_from_heisigs_remembering_the_kanji/).

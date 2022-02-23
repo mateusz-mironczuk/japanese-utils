@@ -63,6 +63,6 @@ async function copy(sourceDirectory, destinationDirectory, files) {
 
 function copyFile(sourceDirectory, destinationDirectory, file) {
   const source = path.join(sourceDirectory, file)
-  const destination = path.join(destinationDirectory, file)
+  const destination = path.join(destinationDirectory, '_' + file)
   return fs.copyFile(source, destination)
 }
