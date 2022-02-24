@@ -39,8 +39,8 @@ function simplify(entry) {
   return {
     kanji: entry.literal,
     ucs: getUCSCodepoint(entry),
-    om: getOmReadings(entry),
-    kun: getKunReadings(entry),
+    on: getReadings('on', entry),
+    kun: getReadings('kun', entry),
     meaning: getMeaning(entry),
     strokes: getStrokesCount(entry)
   }
@@ -51,15 +51,9 @@ function getUCSCodepoint(entry) {
     .find(item => item['@_cp_type'] === 'ucs')['#text']
 }
 
-function getOmReadings(entry) {
+function getReadings(type, entry) {
   return entry.reading_meaning.rmgroup.reading
-    .filter(item => item['@_r_type'] === 'ja_on')
-    .map(item => item['#text'])
-}
-
-function getKunReadings(entry) {
-  return entry.reading_meaning.rmgroup.reading
-    .filter(item => item['@_r_type'] === 'ja_kun')
+    .filter(item => item['@_r_type'] === 'ja_' + type)
     .map(item => item['#text'])
 }
 
