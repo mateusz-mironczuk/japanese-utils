@@ -10,7 +10,7 @@ The repository contains following utility scripts:
 Generates kanji files for the `add-kanji-info` project.
 
 #### Usage
-1. Obtain a legal `kanjidic2.xml` file.
+1. Obtain a legal [kanjidic2.xml](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) file.
 2. Run `node src/generate-kanji-files.js <path to the kanjidic2.xml file>`.
 3. The generated files will be saved inside `_kanji` directory in a current
     working directory.
