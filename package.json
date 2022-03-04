@@ -4,6 +4,7 @@
   "description": "Various utilities to prepare data for apps which helps me learn Japanese.",
   "main": "src/index.js",
   "type": "module",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
