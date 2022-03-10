@@ -4,14 +4,40 @@ import fsPromises from 'fs/promises'
 import path from 'path'
 import * as urls from './generate-core-deck-urls.js'
 
-export default async function generateCoreDeck(core, deckDirectoryPath) {
-  await fsPromises.mkdir(deckDirectoryPath, { recursive: true })
-  const deck = {
-    core,
-    directoryPath: deckDirectoryPath,
-    filePath: path.join(deckDirectoryPath, `core ${core}.csv`)
-  }
+export default async function generateCoreDeck(core, directoryPath) {
+  await fsPromises.mkdir(directoryPath, { recursive: true })
+  const filePath = path.join(directoryPath, `core ${core}.csv`)
+  const alreadyDownloadedEntries = await getAlreadyDownloadedEntries(filePath)
+  const deck = { core, directoryPath, filePath, alreadyDownloadedEntries }
   await download(deck)
+}
+
+function getAlreadyDownloadedEntries(filePath) {
+  return fsPromises
+    .readFile(filePath, 'utf-8')
+    .then(parseAlreadyDownloadedEntries)
+    .catch(_error => [])
+}
+
+function parseAlreadyDownloadedEntries(contents) {
+  return contents
+    .trim()
+    .split('\n')
+    .map(parseEntryLine)
+}
+
+function parseEntryLine(line) {
+  const data = line
+    .trim()
+    .split('\t')
+  return {
+    word: data[0],
+    transliteration: data[1],
+    meaning: data[2],
+    notes: data[3],
+    examples: data[4],
+    id: parseInt(data[5])
+  }
 }
 
 async function download(deck) {
@@ -19,7 +45,8 @@ async function download(deck) {
   const courses = await downloadCourses(coursesIDs)
   const coursesWithSimplifiedEntries = simplifyEntriesInCourses(courses)
   const merged = coursesWithSimplifiedEntries.flat()
-  const filtered = await filterAlreadyDownloadedEntries(deck, merged)
+  const differentiated = differentiateHomonyms(merged)
+  const filtered = filterAlreadyDownloadedEntries(deck, differentiated)
   await downloadEntries(deck, filtered)
 }
 
@@ -50,12 +77,13 @@ function simplifyEntriesInCourses(courses) {
 
 function simplifyEntries(entries) {
   return entries.map(entry => ({
-    id: entry.item.id,
     word: entry.item.cue.text,
-    sound: entry.sound,
     transliteration: entry.item.cue.transliterations.Hrkt,
+    sound: entry.sound,
     meaning: entry.item.response.text,
-    examples: simplifyExamples(entry)
+    notes: '',
+    examples: simplifyExamples(entry),
+    id: entry.item.id
   }))
 }
 
@@ -73,24 +101,26 @@ function simplifyExample(example) {
   ].join('<br>')
 }
 
-async function filterAlreadyDownloadedEntries(deck, entries) {
-  const ids = await getDownloadedEntriesIDs(deck)
+function differentiateHomonyms(entries) {
+  return entries.reduce((acc, entry) => {
+    const { word } = entry
+    const wordOccurrences = (acc.occurrences[word] ?? 0) + 1
+    const newEntry = wordOccurrences > 1
+      ? { ...entry, word: `${word} meaning${wordOccurrences}` }
+      : entry
+    return {
+      occurrences: { ...acc.occurrences, [word]: wordOccurrences },
+      entries: [...acc.entries, newEntry]
+    }
+  }, {
+    occurrences: {},
+    entries: []
+  }).entries
+}
+
+function filterAlreadyDownloadedEntries(deck, entries) {
+  const ids = deck.alreadyDownloadedEntries.map(({ id }) => id)
   return entries.filter(({ id }) => !ids.includes(id))
-}
-
-function getDownloadedEntriesIDs(deck) {
-  return fsPromises
-    .readFile(deck.filePath, 'utf-8')
-    .then(parseDownloadedEntriesIDs)
-    .catch(_error => [])
-}
-
-function parseDownloadedEntriesIDs(deckFileContents) {
-  return deckFileContents
-    .trim()
-    .split('\n')
-    .map(line => line.match(/\d+$/)[0])
-    .map(id => parseInt(id))
 }
 
 function downloadEntries(deck, entries) {
@@ -123,7 +153,7 @@ function createEntryLine(entry, soundFileName) {
     entry.word,
     `${entry.transliteration}[sound:${soundFileName}]`,
     entry.meaning,
-    '',//notes
+    entry.notes,
     entry.examples,
     entry.id
   ].join('\t')
