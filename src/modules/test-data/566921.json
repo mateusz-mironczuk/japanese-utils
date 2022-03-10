@@ -1,0 +1,834 @@
+{
+  "id": 566921,
+  "created_at": "2010-10-21T05:55:29Z",
+  "updated_at": "2022-03-04T00:34:23Z",
+  "published_at": "2011-01-11T20:00:17Z",
+  "is_community": false,
+  "title": "Japanese Core 1000: Step 1",
+  "description": "Welcome to the first course of the Japanese Core 1000 series that covers the 1000 top words in Japanese.\r\n\r\nIf you're new to studying Japanese, we recommend you first read our Guide to Japanese. \r\nhttp://iknow.jp/guides/ja\r\nThis will explain the basics of inputting Japanese.",
+  "difficulty_level": 1,
+  "cue_language": "ja",
+  "response_language": "en",
+  "icon": "https://assets3.iknow.jp/assets/users/Smart.fm/cl6h8q59cbj7g.jpg",
+  "items_count": 100,
+  "sentences_count": 187,
+  "users_count": 122096,
+  "series": {
+    "id": 3423,
+    "name": "Japanese Core 1000",
+    "short_description": "This series of ten courses covers the top 1,000 most commonly used words in Japanese.\n\nMastering these 1,000 items and sentences will give you the vocabulary and sentence patterns to function in most everyday situations."
+  },
+  "author": {
+    "username": "Smart.fm",
+    "name": "Smart.fm",
+    "image": "https://assets3.iknow.jp/assets/users/Smart.fm/41a06768.jpg"
+  },
+  "rights": {
+    "open": false,
+    "private": false
+  },
+  "goal_items": [
+    {
+      "item": {
+        "id": 257960,
+        "type": "text",
+        "cue": {
+          "text": "行く",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Verb",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "いく",
+            "Hrkt": "いく",
+            "Latn": "iku"
+          }
+        },
+        "response": {
+          "text": "go",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 1,
+      "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JW00393A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 247015,
+            "language": "ja",
+            "text": "日曜日は図書館に\u003cb\u003e行きます\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "にちようび は としょかん に \u003cb\u003eいきます\u003c/b\u003e。",
+              "Hrkt": "にちようび は としょかん に \u003cb\u003eいきます\u003c/b\u003e。",
+              "Latn": "nichiyoubi ha toshokan ni \u003cb\u003eikimasu\u003c/b\u003e.",
+              "Jpan": "日曜日 は 図書館 に 行きます 。"
+            }
+          },
+          "response": {
+            "id": 247016,
+            "language": "en",
+            "text": "I go to the library on Sundays."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/3835135.jpg",
+          "sound": "https://assets0.iknow.jp/assets/legacy/JLL/audio/JS00393A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 249227,
+            "language": "ja",
+            "text": "私は夏休みにプールに\u003cb\u003e行った\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "わたし は なつやすみ に ぷーる に \u003cb\u003eいった\u003c/b\u003e。",
+              "Hrkt": "わたし は なつやすみ に プール に \u003cb\u003eいった\u003c/b\u003e。",
+              "Latn": "watashi ha natsuyasumi ni pu-ru ni \u003cb\u003eitta\u003c/b\u003e.",
+              "Jpan": "私 は 夏休み に プール に 行った 。"
+            }
+          },
+          "response": {
+            "id": 249228,
+            "language": "en",
+            "text": "I went to the pool during summer vacation."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/4059172.jpg",
+          "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JS07970A.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "出る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "でる",
+              "Latn": "deru",
+              "Hira": "でる"
+            }
+          },
+          {
+            "text": "変える",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "かえる",
+              "Latn": "kaeru",
+              "Hira": "かえる"
+            }
+          },
+          {
+            "text": "歩く",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "あるく",
+              "Latn": "aruku",
+              "Hira": "あるく"
+            }
+          },
+          {
+            "text": "呼ぶ",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "よぶ",
+              "Latn": "yobu",
+              "Hira": "よぶ"
+            }
+          },
+          {
+            "text": "言う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いう",
+              "Latn": "iu",
+              "Hira": "いう"
+            }
+          },
+          {
+            "text": "分かる",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "わかる",
+              "Latn": "wakaru",
+              "Hira": "わかる"
+            }
+          },
+          {
+            "text": "買う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "かう",
+              "Latn": "kau",
+              "Hira": "かう"
+            }
+          },
+          {
+            "text": "走る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "はしる",
+              "Latn": "hashiru",
+              "Hira": "はしる"
+            }
+          },
+          {
+            "text": "なる",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "なる",
+              "Latn": "naru"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "fly",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "buy",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "run",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "do",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "use",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "die",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "I",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "more",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "now",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "id": 435852,
+        "type": "text",
+        "cue": {
+          "text": "見る",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Verb",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "みる",
+            "Hrkt": "みる",
+            "Latn": "miru"
+          }
+        },
+        "response": {
+          "text": "see, look at",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 2,
+      "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JW09011A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 246959,
+            "language": "ja",
+            "text": "私は絵を\u003cb\u003e見る\u003c/b\u003eのが好きです。",
+            "transliterations": {
+              "Hira": "わたし は え を \u003cb\u003eみる\u003c/b\u003e の が すき です。",
+              "Hrkt": "わたし は え を \u003cb\u003eみる\u003c/b\u003e の が すき です。",
+              "Latn": "watashi ha e wo \u003cb\u003emiru\u003c/b\u003e no ga suki desu.",
+              "Jpan": "私 は 絵 を 見る の が 好き です 。"
+            }
+          },
+          "response": {
+            "id": 246960,
+            "language": "en",
+            "text": "I like looking at pictures."
+          },
+          "image": "https://assets1.iknow.jp/assets/legacy/images/02/3336455.jpg",
+          "sound": "https://assets0.iknow.jp/assets/legacy/JLL/audio/JS09011A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 1258786,
+            "language": "ja",
+            "text": "仕事のあと、映画を\u003cb\u003e見た\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "しごと の あと、 えいが を \u003cb\u003eみた\u003c/b\u003e。",
+              "Hrkt": "しごと の あと、 えいが を \u003cb\u003eみた\u003c/b\u003e。",
+              "Latn": "shigoto no ato, eiga wo \u003cb\u003emita\u003c/b\u003e.",
+              "Jpan": "仕事 の あと 、 映画 を 見た 。"
+            }
+          },
+          "response": {
+            "id": 247096,
+            "language": "en",
+            "text": "I saw a movie after work."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/4302585.jpg",
+          "sound": "https://assets3.iknow.jp/assets/legacy/JLL/audio/JS00187A.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "居る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いる",
+              "Latn": "iru",
+              "Hira": "いる"
+            }
+          },
+          {
+            "text": "行く",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いく",
+              "Latn": "iku",
+              "Hira": "いく"
+            }
+          },
+          {
+            "text": "作る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "つくる",
+              "Latn": "tsukuru",
+              "Hira": "つくる"
+            }
+          },
+          {
+            "text": "会う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "あう",
+              "Latn": "au",
+              "Hira": "あう"
+            }
+          },
+          {
+            "text": "分かる",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "わかる",
+              "Latn": "wakaru",
+              "Hira": "わかる"
+            }
+          },
+          {
+            "text": "死ぬ",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "しぬ",
+              "Latn": "shinu",
+              "Hira": "しぬ"
+            }
+          },
+          {
+            "text": "言う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いう",
+              "Latn": "iu",
+              "Hira": "いう"
+            }
+          },
+          {
+            "text": "出る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "でる",
+              "Latn": "deru",
+              "Hira": "でる"
+            }
+          },
+          {
+            "text": "続く",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "つづく",
+              "Latn": "tsuzuku",
+              "Hira": "つづく"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "say, tell",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "stand, rise",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "begin, start",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "ride, take",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "return, go back",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "hear, ask",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "teach, tell",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "do, make",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "live, reside",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "id": 2844748,
+        "type": "text",
+        "cue": {
+          "text": "まだ",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Adverb",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "まだ",
+            "Hrkt": "まだ",
+            "Latn": "mada"
+          }
+        },
+        "response": {
+          "text": "(not) yet, still",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 24,
+      "sound": "https://assets0.iknow.jp/assets/legacy/JLL/audio/JW08718A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 247007,
+            "language": "ja",
+            "text": "宿題は\u003cb\u003eまだ\u003c/b\u003e終わっていません。",
+            "transliterations": {
+              "Hira": "しゅくだい は \u003cb\u003eまだ\u003c/b\u003e おわって いません。",
+              "Hrkt": "しゅくだい は \u003cb\u003eまだ\u003c/b\u003e おわって いません。",
+              "Latn": "shukudai ha \u003cb\u003emada\u003c/b\u003e owatte imasen.",
+              "Jpan": "宿題 は まだ 終わって いません 。"
+            }
+          },
+          "response": {
+            "id": 247008,
+            "language": "en",
+            "text": "I haven't finished my homework yet."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/5450373.jpg",
+          "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JS08718A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 247083,
+            "language": "ja",
+            "text": "彼は\u003cb\u003eまだ\u003c/b\u003e若いです。",
+            "transliterations": {
+              "Hira": "かれ は \u003cb\u003eまだ\u003c/b\u003e わかい です。",
+              "Hrkt": "かれ は \u003cb\u003eまだ\u003c/b\u003e わかい です。",
+              "Latn": "kare ha \u003cb\u003emada\u003c/b\u003e wakai desu.",
+              "Jpan": "彼 は まだ 若い です 。"
+            }
+          },
+          "response": {
+            "id": 247084,
+            "language": "en",
+            "text": "He's still young."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/6292700.jpg",
+          "sound": "https://assets3.iknow.jp/assets/legacy/JLL/audio/JS10002A.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "もう",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "もう",
+              "Latn": "mou"
+            }
+          },
+          {
+            "text": "どう",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "どう",
+              "Latn": "dou"
+            }
+          },
+          {
+            "text": "後",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "あと",
+              "Latn": "ato",
+              "Hira": "あと"
+            }
+          },
+          {
+            "text": "かなり",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "かなり",
+              "Latn": "kanari"
+            }
+          },
+          {
+            "text": "そう",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "そう",
+              "Latn": "sou"
+            }
+          },
+          {
+            "text": "よく",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "よく",
+              "Latn": "yoku"
+            }
+          },
+          {
+            "text": "直ぐ",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "すぐ",
+              "Latn": "sugu",
+              "Hira": "すぐ"
+            }
+          },
+          {
+            "text": "今",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いま",
+              "Latn": "ima",
+              "Hira": "いま"
+            }
+          },
+          {
+            "text": "広い",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "ひろい",
+              "Latn": "hiroi",
+              "Hira": "ひろい"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "how, what",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "understand",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "happen",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "student",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "doctor",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "make, create",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "give",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "place",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "stand, rise",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "id": 3050551,
+        "type": "text",
+        "cue": {
+          "text": "パート",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Noun",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "ぱーと",
+            "Hrkt": "パート",
+            "Latn": "pa-to"
+          }
+        },
+        "response": {
+          "text": "part-time",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 100,
+      "sound": "https://assets1.iknow.jp/assets/users/Smart.fm/2ldl5n3jkga5s.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 1307889,
+            "language": "ja",
+            "text": "彼女は\u003cb\u003eパート\u003c/b\u003eで働いています。",
+            "transliterations": {
+              "Hira": "かのじょ は \u003cb\u003eぱーと\u003c/b\u003e で はたらいて います。",
+              "Hrkt": "かのじょ は \u003cb\u003eパート\u003c/b\u003e で はたらいて います。",
+              "Latn": "kanojo ha \u003cb\u003epa-to\u003c/b\u003e de hataraite imasu.",
+              "Jpan": "彼女 は パート で 働いて います 。"
+            }
+          },
+          "response": {
+            "id": 1307888,
+            "language": "en",
+            "text": "She is working part time."
+          },
+          "image": "https://assets2.iknow.jp/assets/legacy/images/01/2469664.jpg",
+          "sound": "https://assets2.iknow.jp/assets/users/Smart.fm/el3l8n2jk47ik.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 3701305,
+            "language": "ja",
+            "text": "妻が\u003cb\u003eパート\u003c/b\u003eの仕事を探しています。",
+            "transliterations": {
+              "Hira": "つま が \u003cb\u003eぱーと\u003c/b\u003e の しごと を さがして います。",
+              "Hrkt": "つま が \u003cb\u003eパート\u003c/b\u003e の しごと を さがして います。",
+              "Latn": "tsuma ga \u003cb\u003epa-to\u003c/b\u003e no shigoto wo sagashite imasu.",
+              "Jpan": "妻 が パート の 仕事 を 探して います 。"
+            }
+          },
+          "response": {
+            "id": 3701304,
+            "language": "en",
+            "text": "My wife is looking for a part-time job."
+          },
+          "image": null,
+          "sound": "https://assets1.iknow.jp/assets/users/Smart.fm/e58f4kb2rs.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "ティッシュ",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "てぃっしゅ",
+              "Hrkt": "ティッシュ",
+              "Latn": "tisshu"
+            }
+          },
+          {
+            "text": "レシート",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "れしーと",
+              "Hrkt": "レシート",
+              "Latn": "reshi-to"
+            }
+          },
+          {
+            "text": "メニュー",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "めにゅー",
+              "Hrkt": "メニュー",
+              "Latn": "menyu-"
+            }
+          },
+          {
+            "text": "パスポート",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ぱすぽーと",
+              "Hrkt": "パスポート",
+              "Latn": "pasupo-to"
+            }
+          },
+          {
+            "text": "バス",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ばす",
+              "Hrkt": "バス",
+              "Latn": "basu"
+            }
+          },
+          {
+            "text": "クラス",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "くらす",
+              "Hrkt": "クラス",
+              "Latn": "kurasu"
+            }
+          },
+          {
+            "text": "テレビ",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "てれび",
+              "Hrkt": "テレビ",
+              "Latn": "terebi"
+            }
+          },
+          {
+            "text": "プログラム",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ぷろぐらむ",
+              "Hrkt": "プログラム",
+              "Latn": "puroguramu"
+            }
+          },
+          {
+            "text": "ドル",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "どる",
+              "Hrkt": "ドル",
+              "Latn": "doru"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "photograph",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "last year",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "program",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "toothbrush",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "address",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "television",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "hospital",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "voice, sound",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "receipt",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    }
+  ]
+}
