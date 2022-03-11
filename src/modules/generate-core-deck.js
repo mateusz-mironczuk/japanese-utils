@@ -1,6 +1,6 @@
-import fetch from './generate-core-deck-fetch.js'
 import fs from 'fs'
 import fsPromises from 'fs/promises'
+import nodeFetch from 'node-fetch'
 import path from 'path'
 import * as urls from './generate-core-deck-urls.js'
 
@@ -51,7 +51,7 @@ async function download(deck) {
 }
 
 async function downloadCoursesIDs(deck) {
-  const response = await fetch(urls.indexPageUrl)
+  const response = await nodeFetch(urls.indexPageUrl)
   const indexContents = await response.text()
   const pattern = String.raw`Japanese Core ${deck.core}: Step \d{1,2}" href="(https://iknow.jp)?/courses/(?<courseID>\d+)">`
   const regex = new RegExp(pattern, 'g')
@@ -67,7 +67,7 @@ function downloadCourses(coursesIDs) {
 }
 
 async function downloadCourse(courseID) {
-  return (await fetch(`${urls.entriesHostUrl}/${courseID}.json`))
+  return (await nodeFetch(`${urls.entriesHostUrl}/${courseID}.json`))
     .json()
 }
 
@@ -139,7 +139,7 @@ async function downloadEntry(deck, entry) {
 }
 
 async function downloadSound(filePath, soundURL) {
-  const { body } = await fetch(soundURL)
+  const { body } = await nodeFetch(soundURL)
   const stream = fs.createWriteStream(filePath)
   await new Promise((resolve, reject) => {
     body.pipe(stream)

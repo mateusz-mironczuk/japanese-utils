@@ -1,10 +1,9 @@
-import fs from 'fs'
 import fsPromises from 'fs/promises'
 import generateCoreDeck from './generate-core-deck.js'
 import path from 'path'
 import pagesMappings from './test-data/pages-mappings.js'
-import * as fetch from './generate-core-deck-fetch.js'
-import * as nodeFetch from 'node-fetch'
+import * as msw from 'msw'
+import * as mswNode from 'msw/node'
 import * as soundMappings from './test-data/sound-mappings.js'
 
 const core = 1000
@@ -22,16 +21,28 @@ const expectedSoundsPaths = Object
   .values(soundMappings.expectedPathsToSourcePaths)
   .map(file => path.join(testDataDirectoryPath, file))
 
-fetch.setFetchFunction(async url => {
+const mockedGet = msw.rest.get('*', async (req, res, ctx) => {
+  const { url } = req
   const fileName = pagesMappings[url] ?? soundMappings.urlsToSourcePaths[url]
   const filePath = path.join(testDataDirectoryPath, fileName)
-  const stream = fs.createReadStream(filePath)
-  const response = new nodeFetch.Response(stream)
-  return Promise.resolve(response)
+  const contents = await fsPromises.readFile(filePath)
+  return res(
+    ctx.status(200),
+    ctx.body(contents)
+  )
+})
+const server = mswNode.setupServer(mockedGet)
+
+beforeAll(async () => {
+  await fsPromises.rm(tempDirectoryPath, { recursive: true, force: true })
+  server.listen()
+})
+
+afterAll(() => {
+  server.close()
 })
 
 test('Generates a core 1000 deck', async () => {
-  await fsPromises.rm(tempDirectoryPath, { recursive: true, force: true })
   await generateCoreDeck(core, tempDirectoryPath)
   //retries after a connection error
   await generateCoreDeck(core, tempDirectoryPath)
