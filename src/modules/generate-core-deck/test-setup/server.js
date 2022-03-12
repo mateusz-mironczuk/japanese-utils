@@ -5,14 +5,25 @@ import path from 'path'
 import * as paths from './paths.js'
 import urlMappings from './url-mappings.js'
 
-const mockedGet = msw.rest.get('*', async (req, res, ctx) => {
-  const { url } = req
-  const filePath = path.join(paths.testDataDirectoryPath, urlMappings[url])
-  const contents = await fsPromises.readFile(filePath)
-  return res(
-    ctx.status(200),
-    ctx.body(contents)
-  )
-})
+const fileNameToSimulateServerError = 'まだ_まだ.mp3'
+
+const mockedGet = function () {
+  let interrupted = false
+  return msw.rest.get('*', async (req, res, ctx) => {
+    const fileName = urlMappings[req.url]
+
+    if (!interrupted && fileName === fileNameToSimulateServerError) {
+      interrupted = !interrupted
+      return res.networkError('Failed to fetch a file')
+    } else {
+      const filePath = path.join(paths.testDataDirectoryPath, fileName)
+      const contents = await fsPromises.readFile(filePath)
+      return res(
+        ctx.status(200),
+        ctx.body(contents)
+      )
+    }
+  })
+}()
 
 export default mswNode.setupServer(mockedGet)

@@ -15,8 +15,8 @@ afterAll(() => {
 test('Generates a core 1000 deck', async () => {
   const core = 1000
   await generateCoreDeck(core, paths.tempDirectoryPath)
-  //retries after a connection error
-  await generateCoreDeck(core, paths.tempDirectoryPath)
+    //retries after a connection error
+    .catch(_error => generateCoreDeck(core, paths.tempDirectoryPath))
 
   const actualFilePath = paths.getActualDeckFilePath(core)
   const actualContents = await fsPromises.readFile(actualFilePath, 'utf-8')
