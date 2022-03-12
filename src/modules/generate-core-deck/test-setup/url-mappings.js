@@ -1,9 +1,9 @@
-import * as urls from '../urls.js'
+import * as iknow from '../iknow.js'
 
 export default {
-  [urls.entriesHostUrl + '/566921.json']: '566921.json',
-  [urls.entriesHostUrl + '/566922.json']: '566922.json',
-  [urls.indexPageUrl]: 'iKnow!.html',
+  [iknow.entriesHostURL + '/566921.json']: '566921.json',
+  [iknow.entriesHostURL + '/566922.json']: '566922.json',
+  [iknow.indexURL]: 'iKnow!.html',
   'https://assets1.iknow.jp/assets/users/Smart.fm/2ldl5n3jkga5s.mp3': 'パート_パート.mp3',
   'https://assets0.iknow.jp/assets/legacy/JLL/audio/JW08718A.mp3': 'まだ_まだ.mp3',
   'https://assets2.iknow.jp/assets/legacy/JLL/audio/JW09011A.mp3': '見る_みる.mp3',
