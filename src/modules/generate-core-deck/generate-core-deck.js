@@ -2,7 +2,7 @@ import fs from 'fs'
 import fsPromises from 'fs/promises'
 import nodeFetch from 'node-fetch'
 import path from 'path'
-import * as urls from './generate-core-deck-urls.js'
+import * as urls from './urls.js'
 
 export default async function generateCoreDeck(core, directoryPath) {
   await fsPromises.mkdir(directoryPath, { recursive: true })

@@ -1,4 +1,4 @@
-import generateCoreDeck from './modules/generate-core-deck.js'
+import generateCoreDeck from './modules/generate-core-deck/generate-core-deck.js'
 
 const core = process.argv[2]
 
