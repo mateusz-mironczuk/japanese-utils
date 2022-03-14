@@ -13,10 +13,15 @@ export async function getEntries(core) {
 async function getCoursesIDs(core) {
   const response = await nodeFetch(indexURL)
   const contents = await response.text()
-  const pattern = String.raw`Japanese Core ${core}: Step \d{1,2}" href="(https://iknow.jp)?/courses/(?<courseID>\d+)">`
-  const regex = new RegExp(pattern, 'g')
+  const regex = buildCourseURLRegex(core)
   const matches = contents.matchAll(regex)
   return Array.from(matches, ({ groups }) => groups.courseID)
+}
+
+function buildCourseURLRegex(core) {
+  const pattern = String.raw`Japanese Core ${core}: Step \d{1,2}"`
+    + String.raw` href="(https://iknow.jp)?/courses/(?<courseID>\d+)">`
+  return new RegExp(pattern, 'g')
 }
 
 function getCourses(coursesIDs) {

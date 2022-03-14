@@ -1,6 +1,13 @@
 import * as cheerio from 'cheerio'
 import nodeFetch from 'node-fetch'
 
+const searchResultHeaderQuery = 'div.ResultDiv'
+  + ' > div[style="font-size:22px;padding-bottom:1px;padding-top:3px"]'
+const transliterationContainerQuery = 'div[style="border:1px solid #808080"]'
+const transliterationInKanaQuery = 'span:not([style*="font-size:15px"])'
+const pitchDropStyle = 'border-top:2px solid #FF6020;'
+  + 'border-right:2px solid #FF6020'
+
 export const indexURL = 'https://takoboto.jp/'
 
 export async function getPitchPattern(entry) {
@@ -25,9 +32,7 @@ function trimDifferentiationFromWord(word) {
 
 function findEntryURLInSearchResults(html, wordsToFind) {
   const $ = cheerio.load(html)
-  const query = 'div.ResultDiv'
-    + ' > div[style="font-size:22px;padding-bottom:1px;padding-top:3px"]'
-  return $(query)
+  return $(searchResultHeaderQuery)
     .toArray()
     .map(header => $(header))
     .find(header => findProperSearchResultHeader(header, wordsToFind))
@@ -52,22 +57,21 @@ function addPitchPattern(html, transliteration) {
 }
 
 function buildSelectQuery(transliteration) {
-  const container = 'div[style="border:1px solid #808080"]'
-  const withTransliteration = `span:contains("${transliteration}")`
-  const onlyInKana = 'span:not([style*="font-size:15px"])'
-  return `${container} ${withTransliteration} > ${onlyInKana}`
+  return transliterationContainerQuery
+    + ` span:contains("${transliteration}")`
+    + ` > ${transliterationInKanaQuery}`
 }
 
 function parsePitchPattern(elements) {
-  const pitchDrop = 'border-top:2px solid #FF6020;border-right:2px solid #FF6020'
   return elements
     .toArray()
-    .map(element => {
-      const character = element.children[0].data
-      const style = element.attribs.style
-      return style.includes(pitchDrop)
-        ? character + '¬'
-        : character
-    })
+    .map(parseCharacter)
     .join('')
+}
+
+function parseCharacter(element) {
+  const character = element.children[0].data
+  return element.attribs.style.includes(pitchDropStyle)
+    ? character + '¬'
+    : character
 }

@@ -23,15 +23,15 @@ function getSoundPaths(directoryPath) {
     .map(file => path.join(directoryPath, file))
 }
 
-export function getActualDeckFilePath(core) {
-  return getDeckFilePath(tempDirectoryPath, core)
+export function getActualDeckPath(core) {
+  return getDeckPath(tempDirectoryPath, core)
 }
 
-export function getExpectedDeckFilePath(core) {
-  return getDeckFilePath(testDataDirectoryPath, core)
+export function getExpectedDeckPath(core) {
+  return getDeckPath(testDataDirectoryPath, core)
 }
 
-function getDeckFilePath(directoryPath, core) {
+function getDeckPath(directoryPath, core) {
   const fileName = `core ${core}.csv`
   return path.join(directoryPath, fileName)
 }

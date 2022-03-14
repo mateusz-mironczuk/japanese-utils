@@ -15,13 +15,13 @@ afterAll(() => {
 test('Generates a core 1000 deck', async () => {
   const core = 1000
   await generateCoreDeck(core, paths.tempDirectoryPath)
-    //retries after a connection error
+    //retries after a network error
     .catch(_error => generateCoreDeck(core, paths.tempDirectoryPath))
 
-  const actualFilePath = paths.getActualDeckFilePath(core)
-  const actualContents = await fsPromises.readFile(actualFilePath, 'utf-8')
-  const expectedFilePath = paths.getExpectedDeckFilePath(core)
-  const expectedContents = await fsPromises.readFile(expectedFilePath, 'utf-8')
+  const actualDeckPath = paths.getActualDeckPath(core)
+  const actualContents = await fsPromises.readFile(actualDeckPath, 'utf-8')
+  const expectedDeckPath = paths.getExpectedDeckPath(core)
+  const expectedContents = await fsPromises.readFile(expectedDeckPath, 'utf-8')
   expect(actualContents)
     .toBe(expectedContents)
 

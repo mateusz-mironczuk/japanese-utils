@@ -5,14 +5,14 @@ import path from 'path'
 import * as paths from './paths.js'
 import urlMappings from './url-mappings.js'
 
-const fileNameToSimulateServerError = 'まだ_まだ.mp3'
+const fileNameToSimulateNetworkError = 'まだ_まだ.mp3'
 
 const mockedGet = function () {
   let interrupted = false
   return msw.rest.get('*', async (req, res, ctx) => {
     const fileName = urlMappings[req.url]
 
-    if (!interrupted && fileName === fileNameToSimulateServerError) {
+    if (!interrupted && fileName === fileNameToSimulateNetworkError) {
       interrupted = !interrupted
       return res.networkError('Failed to fetch a file')
     } else {

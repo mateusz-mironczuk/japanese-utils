@@ -12,20 +12,20 @@ const idsToWords = {
   1407460: '多い'
 }
 
-const takobotoQueryURLs = Object
+const takobotoQueries = Object
   .values(idsToWords)
   .reduce((acc, word) => {
     const encoded = encodeURI(word)
     return { ...acc, [`${takoboto.indexURL}?q=${encoded}`]: word + '.html' }
   }, {})
 
-const takobotoEntriesURLs = Object
+const takobotoEntries = Object
   .keys(idsToWords)
   .reduce((acc, id) => {
     return { ...acc, [`${takoboto.indexURL}?w=${id}`]: id + '.html' }
   }, {})
 
 export default {
-  ...takobotoQueryURLs,
-  ...takobotoEntriesURLs
+  ...takobotoQueries,
+  ...takobotoEntries
 }
