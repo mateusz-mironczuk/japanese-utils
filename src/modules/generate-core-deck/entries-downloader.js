@@ -5,8 +5,12 @@ import path from 'path'
 import * as takoboto from './takoboto.js'
 
 export function download(deck, entries) {
-  return entries.reduce(async (previousPromise, entry) => {
+  return entries.reduce(async (previousPromise, entry, index) => {
     await previousPromise
+    console.log(
+      'Downloading entry',
+      `${index + 1}/${entries.length}: ${entry.word} (${entry.transliteration})`
+    )
     return downloadEntry(deck, entry)
   }, Promise.resolve())
 }

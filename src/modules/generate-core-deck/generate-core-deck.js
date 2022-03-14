@@ -7,6 +7,7 @@ import path from 'path'
 export default async function generateCoreDeck(core, directoryPath) {
   await fsPromises.mkdir(directoryPath, { recursive: true })
   const filePath = path.join(directoryPath, `core ${core}.csv`)
+  console.log('Downloading...')
   const iknowEntries = await iknow.getEntries(core)
   const downloadedEntries = await downloadDeck.getEntries(filePath)
   const deck = { core, directoryPath, filePath, downloadedEntries }
