@@ -10,11 +10,12 @@ const transliterationInKanaQuery = 'span:not([style*="font-size:15px"])'
 const pitchDropStyle = 'border-top:2px solid #FF6020;'
   + 'border-right:2px solid #FF6020'
 
-export async function getPitchPattern(entry) {
-  const url = await getEntryURL(entry)
-  const html = await nodeFetch(url)
+export function getPitchPattern(entry) {
+  return getEntryURL(entry)
+    .then(nodeFetch)
     .then(response => response.text())
-  return addPitchPattern(html, entry.transliteration)
+    .then(html => addPitchPattern(html, entry.transliteration))
+    .catch(_error => entry.transliteration)
 }
 
 async function getEntryURL(entry) {

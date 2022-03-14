@@ -829,6 +829,208 @@
           }
         ]
       }
+    },
+    {
+      "item": {
+        "id": 201921,
+        "type": "text",
+        "cue": {
+          "text": "びっくりする",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Verb",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "びっくりする",
+            "Hrkt": "びっくりする",
+            "Latn": "bikkurisuru"
+          }
+        },
+        "response": {
+          "text": "be surprised, be startled (casual)",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 10,
+      "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JW07725A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 1212096,
+            "language": "ja",
+            "text": "大きな音に\u003cb\u003eびっくりしました\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "おおきな おと に \u003cb\u003eびっくり しました\u003c/b\u003e。",
+              "Hrkt": "おおきな おと に \u003cb\u003eびっくり しました\u003c/b\u003e。",
+              "Latn": "ookina oto ni \u003cb\u003ebikkuri shimashita\u003c/b\u003e.",
+              "Jpan": "大きな 音 に びっくり しました 。"
+            }
+          },
+          "response": {
+            "id": 1579951,
+            "language": "en",
+            "text": "I was startled by a sudden noise."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/01/2651996.jpg",
+          "sound": "https://assets0.iknow.jp/assets/legacy/JLL/audio/JS07725A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 3709930,
+            "language": "ja",
+            "text": "急に名前を呼ばれて\u003cb\u003eびっくりしました\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "きゅう に なまえ を よばれて \u003cb\u003eびっくり しました\u003c/b\u003e。",
+              "Hrkt": "きゅう に なまえ を よばれて \u003cb\u003eびっくり しました\u003c/b\u003e。",
+              "Latn": "kyuu ni namae wo yobarete \u003cb\u003ebikkuri shimashita\u003c/b\u003e.",
+              "Jpan": "急 に 名前 を 呼ばれて びっくり しました 。"
+            }
+          },
+          "response": {
+            "id": 3709929,
+            "language": "en",
+            "text": "I was surprised when my name was suddenly called."
+          },
+          "image": null,
+          "sound": "https://assets0.iknow.jp/assets/users/Smart.fm/03avd0bqmk.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "なかなか",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "なかなか",
+              "Hrkt": "なかなか",
+              "Latn": "nakanaka"
+            }
+          },
+          {
+            "text": "久しぶり",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ひさしぶり",
+              "Hrkt": "ひさしぶり",
+              "Latn": "hisashiburi"
+            }
+          },
+          {
+            "text": "さっき",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "さっき",
+              "Hrkt": "さっき",
+              "Latn": "sakki"
+            }
+          },
+          {
+            "text": "疲れる",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "つかれる",
+              "Hrkt": "つかれる",
+              "Latn": "tsukareru"
+            }
+          },
+          {
+            "text": "そんなに",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "そんなに",
+              "Hrkt": "そんなに",
+              "Latn": "sonnani"
+            }
+          },
+          {
+            "text": "付ける",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "つける",
+              "Hrkt": "つける",
+              "Latn": "tsukeru"
+            }
+          },
+          {
+            "text": "ひどい",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ひどい",
+              "Hrkt": "ひどい",
+              "Latn": "hidoi"
+            }
+          },
+          {
+            "text": "届ける",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "とどける",
+              "Hrkt": "とどける",
+              "Latn": "todokeru"
+            }
+          },
+          {
+            "text": "ぶつかる",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ぶつかる",
+              "Hrkt": "ぶつかる",
+              "Latn": "butsukaru"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "steal, rob",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "wipe, dry",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "cry, weep",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "turn, rotate",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "piano",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "smell, odor",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "toilet",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "part, section",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "bed",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
     }
   ]
 }

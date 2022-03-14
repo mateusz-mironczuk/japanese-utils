@@ -14,5 +14,6 @@ export default {
   'https://assets1.iknow.jp/assets/legacy/JLL/audio/JW05789A.mp3': '一日_ついたち.mp3',
   'https://assets1.iknow.jp/assets/legacy/JLL/audio/JW00709A.mp3': '家_うち.mp3',
   'https://assets3.iknow.jp/assets/legacy/JLL/audio/JW00964A.mp3': '多い_おおい.mp3',
+  'https://assets2.iknow.jp/assets/legacy/JLL/audio/JW07725A.mp3': 'びっくりする_びっくりする.mp3',
   ...takobotoURLMappings
 }
