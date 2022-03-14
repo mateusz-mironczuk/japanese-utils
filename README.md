@@ -5,6 +5,7 @@ Various utilities to prepare data for apps which helps me learn Japanese.
 The repository contains following utility scripts:
 - [generate-kanji-files](#generate-kanji-files)
 - [filter-kanji-svg](#filter-kanji-svg)
+- [generate-core-deck](#generate-core-deck)
 
 ### generate-kanji-files
 Generates kanji files for the `add-kanji-info` project.
@@ -28,6 +29,16 @@ Filters kanji SVG files to the most common ones.
 2. Run `node src/filter-kanji-svg.js <path to a directory with the SVG files>`.
 3. The filtered files will be saved inside `_svg` directory in a current
     working directory. File names are preceded with an underscore character.
+
+### generate-core-deck
+Generates a deck based on [iKnow.jp](https://iknow.jp/content/japanese) and
+[Takoboto](https://takoboto.jp/).
+
+#### Usage
+1. Run `node src/generate-core-deck.js <core>`.
+    - `<core>` is a number describing an iKnow.jp lesson.
+2. The generated deck will be saved in a `decks` directory inside a current
+    working directory.
 
 ## Acknowledgements
 The *Remembering the Kanji* characters list is based on [this thread](https://www.reddit.com/r/LearnJapanese/comments/1a126a/all_2200_kanji_from_heisigs_remembering_the_kanji/).
