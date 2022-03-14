@@ -14,8 +14,10 @@ export function download(deck, entries) {
 async function downloadEntry(deck, entry) {
   const soundFileName = `${entry.word}_${entry.transliteration}.mp3`
   const soundFilePath = path.join(deck.directoryPath, soundFileName)
-  await downloadFile(soundFilePath, entry.sound)
-  const pitchPattern = await takoboto.getPitchPattern(entry)
+  const [, pitchPattern] = await Promise.all([
+    downloadFile(soundFilePath, entry.sound),
+    takoboto.getPitchPattern(entry)
+  ])
   const entryWithPitchPattern = { ...entry, transliteration: pitchPattern }
   const line = createEntryLine(entryWithPitchPattern, soundFileName)
   await fsPromises.appendFile(deck.filePath, line, 'utf-8')
