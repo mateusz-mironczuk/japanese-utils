@@ -634,6 +634,208 @@
     },
     {
       "item": {
+        "id": 437427,
+        "type": "text",
+        "cue": {
+          "text": "ウェーター",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Noun",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "うぇーたー",
+            "Hrkt": "ウェーター",
+            "Latn": "we-ta-"
+          }
+        },
+        "response": {
+          "text": "waiter",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 59,
+      "sound": "https://assets1.iknow.jp/assets/legacy/JLL/audio/JW00651A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 1211076,
+            "language": "ja",
+            "text": "\u003cb\u003eウェーター\u003c/b\u003eが水を運んできました。",
+            "transliterations": {
+              "Hira": "\u003cb\u003eうぇーたー\u003c/b\u003e が みず を はこんで きました。",
+              "Hrkt": "\u003cb\u003eウェーター\u003c/b\u003e が みず を はこんで きました。",
+              "Latn": "\u003cb\u003ewe-ta-\u003c/b\u003e ga mizu wo hakonde kimashita.",
+              "Jpan": "ウェーター が 水 を 運んで きました。"
+            }
+          },
+          "response": {
+            "id": 250930,
+            "language": "en",
+            "text": "The waiter brought some water."
+          },
+          "image": "https://assets2.iknow.jp/assets/legacy/images/02/5940714.jpg",
+          "sound": "https://assets3.iknow.jp/assets/legacy/JLL/audio/JS00651A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 3702263,
+            "language": "ja",
+            "text": "私は\u003cb\u003eウェーター\u003c/b\u003eをしています。",
+            "transliterations": {
+              "Hira": "わたし は \u003cb\u003eうぇーたー\u003c/b\u003e を して います。",
+              "Hrkt": "わたし は \u003cb\u003eウェーター\u003c/b\u003e を して います。",
+              "Latn": "watashi ha \u003cb\u003ewe-ta-\u003c/b\u003e wo shite imasu.",
+              "Jpan": "私 は ウェーター を して います 。"
+            }
+          },
+          "response": {
+            "id": 3702262,
+            "language": "en",
+            "text": "I'm working as a waiter."
+          },
+          "image": null,
+          "sound": "https://assets2.iknow.jp/assets/users/Smart.fm/65ah5p3tq0.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "ウェートレス",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "うぇーとれす",
+              "Hrkt": "ウェートレス",
+              "Latn": "we-toresu"
+            }
+          },
+          {
+            "text": "たばこ",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "たばこ",
+              "Hrkt": "たばこ",
+              "Latn": "tabako"
+            }
+          },
+          {
+            "text": "フォーク",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ふぉーく",
+              "Hrkt": "フォーク",
+              "Latn": "fo-ku"
+            }
+          },
+          {
+            "text": "ぬるい",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ぬるい",
+              "Hrkt": "ぬるい",
+              "Latn": "nurui"
+            }
+          },
+          {
+            "text": "スプーン",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "すぷーん",
+              "Hrkt": "スプーン",
+              "Latn": "supu-n"
+            }
+          },
+          {
+            "text": "ごちそう",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ごちそう",
+              "Hrkt": "ごちそう",
+              "Latn": "gochisou"
+            }
+          },
+          {
+            "text": "アイスコーヒー",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "あいすこーひー",
+              "Hrkt": "アイスコーヒー",
+              "Latn": "aisuko-hi-"
+            }
+          },
+          {
+            "text": "つく",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "つく",
+              "Hrkt": "つく",
+              "Latn": "tsuku"
+            }
+          },
+          {
+            "text": "ちょうど",
+            "language": "ja",
+            "transliterations": {
+              "Hira": "ちょうど",
+              "Hrkt": "ちょうど",
+              "Latn": "choudo"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "tomorrow",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "white",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "mountain",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "souvenir",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "cousin",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "name",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "sushi",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "bridge",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "waitress",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    },
+    {
+      "item": {
         "id": 436216,
         "type": "text",
         "cue": {
