@@ -36,8 +36,7 @@ async function getCourse(courseID) {
 
 function simplifyEntries(courses) {
   return courses
-    .map(({ goal_items }) => goal_items)
-    .flat()
+    .flatMap(({ goal_items }) => goal_items)
     .map(simplifyEntry)
 }
 
