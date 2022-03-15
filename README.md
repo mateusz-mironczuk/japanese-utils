@@ -6,6 +6,7 @@ The repository contains following utility scripts:
 - [generate-kanji-files](#generate-kanji-files)
 - [filter-kanji-svg](#filter-kanji-svg)
 - [generate-core-deck](#generate-core-deck)
+- [find-equals-in-decks](#find-equals-in-decks)
 
 ### generate-kanji-files
 Generates kanji files for the `add-kanji-info` project.
@@ -38,6 +39,17 @@ Generates a deck based on [iKnow.jp](https://iknow.jp/content/japanese) and
 1. Run `node src/generate-core-deck.js <core>`.
     - `<core>` is a number describing an iKnow.jp lesson.
 2. The generated deck will be saved in a `decks` directory inside a current
+    working directory.
+
+### find-equals-in-decks.js
+Searches a directory with iKnow Core decks for words written in the same way and
+generates a report.
+
+#### Usage
+1. Run `node src/find-equals-in-decks.js <directory with the decks>`
+    - `<directory with the decks>` A path to the directory which contains the
+        decks.
+2. The generated report will be saved in a file `equals.json` in the current
     working directory.
 
 ## Acknowledgements
