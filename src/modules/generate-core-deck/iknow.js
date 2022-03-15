@@ -25,9 +25,8 @@ function buildCourseURLRegex(core) {
 }
 
 function getCourses(coursesIDs) {
-  return coursesIDs.reduce(async (previousPromise, courseID) => {
-    return [...await previousPromise, await getCourse(courseID)]
-  }, Promise.resolve([]))
+  const promises = coursesIDs.map(getCourse)
+  return Promise.all(promises)
 }
 
 async function getCourse(courseID) {
