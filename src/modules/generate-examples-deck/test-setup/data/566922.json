@@ -1,0 +1,434 @@
+{
+  "id": 566921,
+  "created_at": "2010-10-21T05:55:29Z",
+  "updated_at": "2022-03-04T00:34:23Z",
+  "published_at": "2011-01-11T20:00:17Z",
+  "is_community": false,
+  "title": "Japanese Core 1000: Step 1",
+  "description": "Welcome to the first course of the Japanese Core 1000 series that covers the 1000 top words in Japanese.\r\n\r\nIf you're new to studying Japanese, we recommend you first read our Guide to Japanese. \r\nhttp://iknow.jp/guides/ja\r\nThis will explain the basics of inputting Japanese.",
+  "difficulty_level": 1,
+  "cue_language": "ja",
+  "response_language": "en",
+  "icon": "https://assets3.iknow.jp/assets/users/Smart.fm/cl6h8q59cbj7g.jpg",
+  "items_count": 100,
+  "sentences_count": 187,
+  "users_count": 122096,
+  "series": {
+    "id": 3423,
+    "name": "Japanese Core 1000",
+    "short_description": "This series of ten courses covers the top 1,000 most commonly used words in Japanese.\n\nMastering these 1,000 items and sentences will give you the vocabulary and sentence patterns to function in most everyday situations."
+  },
+  "author": {
+    "username": "Smart.fm",
+    "name": "Smart.fm",
+    "image": "https://assets3.iknow.jp/assets/users/Smart.fm/41a06768.jpg"
+  },
+  "rights": {
+    "open": false,
+    "private": false
+  },
+  "goal_items": [
+    {
+      "item": {
+        "id": 315197,
+        "type": "text",
+        "cue": {
+          "text": "多い",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Adjective",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "おおい",
+            "Hrkt": "おおい",
+            "Latn": "ooi"
+          }
+        },
+        "response": {
+          "text": "a lot of, many",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 3,
+      "sound": "https://assets3.iknow.jp/assets/legacy/JLL/audio/JW00964A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 246963,
+            "language": "ja",
+            "text": "京都にはお寺が\u003cb\u003e多い\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "きょうと に は おてら が \u003cb\u003eおおい\u003c/b\u003e。",
+              "Hrkt": "きょうと に は おてら が \u003cb\u003eおおい\u003c/b\u003e。",
+              "Latn": "kyouto ni ha otera ga \u003cb\u003eooi\u003c/b\u003e.",
+              "Jpan": "京都 に は お寺 が 多い。"
+            }
+          },
+          "response": {
+            "id": 246964,
+            "language": "en",
+            "text": "There are a lot of temples in Kyoto."
+          },
+          "image": "https://assets0.iknow.jp/assets/legacy/images/02/4873535.jpg",
+          "sound": "https://assets1.iknow.jp/assets/legacy/JLL/audio/JS00964A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 248179,
+            "language": "ja",
+            "text": "この道は車が\u003cb\u003e多い\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "この みち は くるま が \u003cb\u003eおおい\u003c/b\u003e。",
+              "Hrkt": "この みち は くるま が \u003cb\u003eおおい\u003c/b\u003e。",
+              "Latn": "kono michi ha kuruma ga \u003cb\u003eooi\u003c/b\u003e.",
+              "Jpan": "この 道 は 車 が 多い 。"
+            }
+          },
+          "response": {
+            "id": 248180,
+            "language": "en",
+            "text": "There are many cars on this road."
+          },
+          "image": "https://assets2.iknow.jp/assets/legacy/images/01/2912826.jpg",
+          "sound": "https://assets0.iknow.jp/assets/legacy/JLL/audio/JS02552A.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "近い",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "ちかい",
+              "Latn": "chikai",
+              "Hira": "ちかい"
+            }
+          },
+          {
+            "text": "高い",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "たかい",
+              "Latn": "takai",
+              "Hira": "たかい"
+            }
+          },
+          {
+            "text": "安い",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "やすい",
+              "Latn": "yasui",
+              "Hira": "やすい"
+            }
+          },
+          {
+            "text": "広い",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "ひろい",
+              "Latn": "hiroi",
+              "Hira": "ひろい"
+            }
+          },
+          {
+            "text": "少ない",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "すくない",
+              "Latn": "sukunai",
+              "Hira": "すくない"
+            }
+          },
+          {
+            "text": "置く",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "おく",
+              "Latn": "oku",
+              "Hira": "おく"
+            }
+          },
+          {
+            "text": "見る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "みる",
+              "Latn": "miru",
+              "Hira": "みる"
+            }
+          },
+          {
+            "text": "あげる",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "あげる",
+              "Latn": "ageru"
+            }
+          },
+          {
+            "text": "住む",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "すむ",
+              "Latn": "sumu",
+              "Hira": "すむ"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "high, tall",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "near, soon",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "long",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "wide, big",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "difficult",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "young",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "how, what",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "please",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "morning",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "id": 435853,
+        "type": "text",
+        "cue": {
+          "text": "家",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Noun",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "うち",
+            "Hrkt": "うち",
+            "Latn": "uchi"
+          }
+        },
+        "response": {
+          "text": "home, household",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 4,
+      "sound": "https://assets1.iknow.jp/assets/legacy/JLL/audio/JW00709A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 246965,
+            "language": "ja",
+            "text": "\u003cb\u003e家\u003c/b\u003eに遊びにきてください。",
+            "transliterations": {
+              "Hira": "\u003cb\u003eうち\u003c/b\u003e に あそび に きて ください。",
+              "Hrkt": "\u003cb\u003eうち\u003c/b\u003e に あそび に きて ください。",
+              "Latn": "\u003cb\u003euchi\u003c/b\u003e ni asobi ni kite kudasai.",
+              "Jpan": "家 に 遊び に きて ください 。"
+            }
+          },
+          "response": {
+            "id": 1696907,
+            "language": "en",
+            "text": "Please come over to my home."
+          },
+          "image": "https://assets1.iknow.jp/assets/legacy/images/02/3752584.jpg",
+          "sound": "https://assets3.iknow.jp/assets/legacy/JLL/audio/JS00709A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 248875,
+            "language": "ja",
+            "text": "夏休みにお祖母ちゃんの\u003cb\u003e家\u003c/b\u003eへ行きました。",
+            "transliterations": {
+              "Hira": "なつやすみ に おばあちゃん の \u003cb\u003eうち\u003c/b\u003e へ いきました。",
+              "Hrkt": "なつやすみ に おばあちゃん の \u003cb\u003eうち\u003c/b\u003e へ いきました。",
+              "Latn": "natsuyasumi ni obaachan no \u003cb\u003euchi\u003c/b\u003e he ikimashita.",
+              "Jpan": "夏休み に お祖母ちゃん の 家 へ 行きました 。"
+            }
+          },
+          "response": {
+            "id": 248876,
+            "language": "en",
+            "text": "I went to my grandma's house during summer vacation."
+          },
+          "image": "https://assets0.iknow.jp/assets/legacy/images/02/4760119.jpg",
+          "sound": "https://assets1.iknow.jp/assets/legacy/JLL/audio/JS06700A.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "部屋",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "へや",
+              "Latn": "heya",
+              "Hira": "へや"
+            }
+          },
+          {
+            "text": "時間",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "じかん",
+              "Latn": "jikan",
+              "Hira": "じかん"
+            }
+          },
+          {
+            "text": "どこ",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "どこ",
+              "Latn": "doko"
+            }
+          },
+          {
+            "text": "私",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "わたし",
+              "Latn": "watashi",
+              "Hira": "わたし"
+            }
+          },
+          {
+            "text": "言葉",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "ことば",
+              "Latn": "kotoba",
+              "Hira": "ことば"
+            }
+          },
+          {
+            "text": "朝",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "あさ",
+              "Latn": "asa",
+              "Hira": "あさ"
+            }
+          },
+          {
+            "text": "本",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "ほん",
+              "Latn": "hon",
+              "Hira": "ほん"
+            }
+          },
+          {
+            "text": "子供",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "こども",
+              "Latn": "kodomo",
+              "Hira": "こども"
+            }
+          },
+          {
+            "text": "車",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "くるま",
+              "Latn": "kuruma",
+              "Hira": "くるま"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "teacher",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "student",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "work, job",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "word, language",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "morning",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "near, close to",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "car, automobile",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "this, this one",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "child, kid",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    }
+  ]
+}

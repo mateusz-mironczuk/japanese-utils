@@ -1,0 +1,435 @@
+{
+  "id": 566921,
+  "created_at": "2010-10-21T05:55:29Z",
+  "updated_at": "2022-03-04T00:34:23Z",
+  "published_at": "2011-01-11T20:00:17Z",
+  "is_community": false,
+  "title": "Japanese Core 1000: Step 1",
+  "description": "Welcome to the first course of the Japanese Core 1000 series that covers the 1000 top words in Japanese.\r\n\r\nIf you're new to studying Japanese, we recommend you first read our Guide to Japanese. \r\nhttp://iknow.jp/guides/ja\r\nThis will explain the basics of inputting Japanese.",
+  "difficulty_level": 1,
+  "cue_language": "ja",
+  "response_language": "en",
+  "icon": "https://assets3.iknow.jp/assets/users/Smart.fm/cl6h8q59cbj7g.jpg",
+  "items_count": 100,
+  "sentences_count": 187,
+  "users_count": 122096,
+  "series": {
+    "id": 3423,
+    "name": "Japanese Core 1000",
+    "short_description": "This series of ten courses covers the top 1,000 most commonly used words in Japanese.\n\nMastering these 1,000 items and sentences will give you the vocabulary and sentence patterns to function in most everyday situations."
+  },
+  "author": {
+    "username": "Smart.fm",
+    "name": "Smart.fm",
+    "image": "https://assets3.iknow.jp/assets/users/Smart.fm/41a06768.jpg"
+  },
+  "rights": {
+    "open": false,
+    "private": false
+  },
+  "goal_items": [
+    {
+      "item": {
+        "id": 257960,
+        "type": "text",
+        "cue": {
+          "text": "行く",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Verb",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "いく",
+            "Hrkt": "いく",
+            "Latn": "iku"
+          }
+        },
+        "response": {
+          "text": "go",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 1,
+      "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JW00393A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 247015,
+            "language": "ja",
+            "text": "日曜日は図書館に\u003cb\u003e行きます\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "にちようび は としょかん に \u003cb\u003eいきます\u003c/b\u003e。",
+              "Hrkt": "にちようび は としょかん に \u003cb\u003eいきます\u003c/b\u003e。",
+              "Latn": "nichiyoubi ha toshokan ni \u003cb\u003eikimasu\u003c/b\u003e.",
+              "Jpan": "日曜日 は 図書館 に 行きます 。"
+            }
+          },
+          "response": {
+            "id": 247016,
+            "language": "en",
+            "text": "I go to the library on Sundays."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/3835135.jpg",
+          "sound": "https://assets0.iknow.jp/assets/legacy/JLL/audio/JS00393A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 249227,
+            "language": "ja",
+            "text": "私は夏休みにプールに\u003cb\u003e行った\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "わたし は なつやすみ に ぷーる に \u003cb\u003eいった\u003c/b\u003e。",
+              "Hrkt": "わたし は なつやすみ に プール に \u003cb\u003eいった\u003c/b\u003e。",
+              "Latn": "watashi ha natsuyasumi ni pu-ru ni \u003cb\u003eitta\u003c/b\u003e.",
+              "Jpan": "私 は 夏休み に プール に 行った 。"
+            }
+          },
+          "response": {
+            "id": 249228,
+            "language": "en",
+            "text": "I went to the pool during summer vacation."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/4059172.jpg",
+          "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JS07970A.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "出る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "でる",
+              "Latn": "deru",
+              "Hira": "でる"
+            }
+          },
+          {
+            "text": "変える",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "かえる",
+              "Latn": "kaeru",
+              "Hira": "かえる"
+            }
+          },
+          {
+            "text": "歩く",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "あるく",
+              "Latn": "aruku",
+              "Hira": "あるく"
+            }
+          },
+          {
+            "text": "呼ぶ",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "よぶ",
+              "Latn": "yobu",
+              "Hira": "よぶ"
+            }
+          },
+          {
+            "text": "言う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いう",
+              "Latn": "iu",
+              "Hira": "いう"
+            }
+          },
+          {
+            "text": "分かる",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "わかる",
+              "Latn": "wakaru",
+              "Hira": "わかる"
+            }
+          },
+          {
+            "text": "買う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "かう",
+              "Latn": "kau",
+              "Hira": "かう"
+            }
+          },
+          {
+            "text": "走る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "はしる",
+              "Latn": "hashiru",
+              "Hira": "はしる"
+            }
+          },
+          {
+            "text": "なる",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "なる",
+              "Latn": "naru"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "fly",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "buy",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "run",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "do",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "use",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "die",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "I",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "more",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "now",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    },
+    {
+      "item": {
+        "id": 435852,
+        "type": "text",
+        "cue": {
+          "text": "見る",
+          "image": null,
+          "language": "ja",
+          "part_of_speech": "Verb",
+          "transcription": null,
+          "transliterations": {
+            "Hira": "みる",
+            "Hrkt": "みる",
+            "Latn": "miru"
+          }
+        },
+        "response": {
+          "text": "see, look at",
+          "language": "en",
+          "transliterations": {}
+        }
+      },
+      "position": 2,
+      "sound": "https://assets2.iknow.jp/assets/legacy/JLL/audio/JW09011A.mp3",
+      "sentences": [
+        {
+          "position": 1,
+          "cue": {
+            "id": 246959,
+            "language": "ja",
+            "text": "私は絵を\u003cb\u003e見る\u003c/b\u003eのが好きです。",
+            "transliterations": {
+              "Hira": "わたし は え を \u003cb\u003eみる\u003c/b\u003e の が すき です。",
+              "Hrkt": "わたし は え を \u003cb\u003eみる\u003c/b\u003e の が すき です。",
+              "Latn": "watashi ha e wo \u003cb\u003emiru\u003c/b\u003e no ga suki desu.",
+              "Jpan": "私 は 絵 を 見る の が 好き です 。"
+            }
+          },
+          "response": {
+            "id": 246960,
+            "language": "en",
+            "text": "I like looking at pictures."
+          },
+          "image": "https://assets1.iknow.jp/assets/legacy/images/02/3336455.jpg",
+          "sound": "https://assets0.iknow.jp/assets/legacy/JLL/audio/JS09011A.mp3"
+        },
+        {
+          "position": 2,
+          "cue": {
+            "id": 1258786,
+            "language": "ja",
+            "text": "仕事のあと、映画を\u003cb\u003e見た\u003c/b\u003e。",
+            "transliterations": {
+              "Hira": "しごと の あと、 えいが を \u003cb\u003eみた\u003c/b\u003e。",
+              "Hrkt": "しごと の あと、 えいが を \u003cb\u003eみた\u003c/b\u003e。",
+              "Latn": "shigoto no ato, eiga wo \u003cb\u003emita\u003c/b\u003e.",
+              "Jpan": "仕事 の あと 、 映画 を 見た 。"
+            }
+          },
+          "response": {
+            "id": 247096,
+            "language": "en",
+            "text": "I saw a movie after work."
+          },
+          "image": "https://assets3.iknow.jp/assets/legacy/images/02/4302585.jpg",
+          "sound": "https://assets3.iknow.jp/assets/legacy/JLL/audio/JS00187A.mp3"
+        }
+      ],
+      "annotation": null,
+      "distractors": {
+        "cue": [
+          {
+            "text": "居る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いる",
+              "Latn": "iru",
+              "Hira": "いる"
+            }
+          },
+          {
+            "text": "行く",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いく",
+              "Latn": "iku",
+              "Hira": "いく"
+            }
+          },
+          {
+            "text": "作る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "つくる",
+              "Latn": "tsukuru",
+              "Hira": "つくる"
+            }
+          },
+          {
+            "text": "会う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "あう",
+              "Latn": "au",
+              "Hira": "あう"
+            }
+          },
+          {
+            "text": "分かる",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "わかる",
+              "Latn": "wakaru",
+              "Hira": "わかる"
+            }
+          },
+          {
+            "text": "死ぬ",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "しぬ",
+              "Latn": "shinu",
+              "Hira": "しぬ"
+            }
+          },
+          {
+            "text": "言う",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "いう",
+              "Latn": "iu",
+              "Hira": "いう"
+            }
+          },
+          {
+            "text": "出る",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "でる",
+              "Latn": "deru",
+              "Hira": "でる"
+            }
+          },
+          {
+            "text": "続く",
+            "language": "ja",
+            "transliterations": {
+              "Hrkt": "つづく",
+              "Latn": "tsuzuku",
+              "Hira": "つづく"
+            }
+          }
+        ],
+        "response": [
+          {
+            "text": "say, tell",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "stand, rise",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "begin, start",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "ride, take",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "return, go back",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "hear, ask",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "teach, tell",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "do, make",
+            "language": "en",
+            "transliterations": {}
+          },
+          {
+            "text": "live, reside",
+            "language": "en",
+            "transliterations": {}
+          }
+        ]
+      }
+    }
+  ]
+}

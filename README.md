@@ -4,6 +4,7 @@ Various utilities to prepare data for apps which helps me learn Japanese.
 ## Utilities
 The repository contains following utility scripts:
 - [generate-core-deck](#generate-core-deck)
+- [generate-examples-deck](#generate-examples-deck)
 - [generate-kanji-files](#generate-kanji-files)
 - [filter-kanji-svg](#filter-kanji-svg)
 - [find-equals-in-decks](#find-equals-in-decks)
@@ -14,6 +15,15 @@ Generates a deck based on [iKnow.jp](https://iknow.jp/content/japanese) and
 
 #### Usage
 1. Run `node src/generate-core-deck.js <core>`.
+    - `<core>` is a number describing an iKnow.jp lesson.
+2. The generated deck will be saved in a `decks` directory inside a current
+    working directory.
+
+### generate-examples-deck
+Generates an examples deck based on [iKnow.jp](https://iknow.jp/content/japanese).
+
+#### Usage
+1. Run `node src/generate-examples-deck.js <core>`.
     - `<core>` is a number describing an iKnow.jp lesson.
 2. The generated deck will be saved in a `decks` directory inside a current
     working directory.

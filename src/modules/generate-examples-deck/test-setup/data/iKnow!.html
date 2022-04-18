@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://iknow.jp/content/japanese -->
+<html lang="ja"
+  class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <script async="" src="./iKnow!_files/gtm.js"></script>
+  <script async="" src="./iKnow!_files/fbevents.js"></script>
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+
+  <title>iKnow!</title>
+
+
+  <meta name="author" content="合同会社DMM.com - https://dmm-corp.com/company/">
+  <meta name="copyright" content="(C) 2015 DMM">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://assets0.iknow.jp/_assets/common/favicon_production-5414a73e10e897778c4ac3bee7065019efba2eec700e7b7b10183d29febe87a9.ico">
+  <link rel="alternate" hreflang="en" href="https://en.iknow.jp/content/japanese">
+  <link rel="alternate" hreflang="ja" href="https://ja.iknow.jp/content/japanese">
+
+  <meta name="csrf-param" content="authenticity_token">
+  <meta name="csrf-token"
+    content="vZOKFdFyyXQGfGDsE6RMe6iqIdIhSain3HzSyGc11nu4rq39u7oKhmZT74rpMMX4UTclg5FaLDbdjJtU5zRJHQ==">
+
+  <meta property="fb:app_id" content="142807375777389">
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '535902816562439');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=535902816562439&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  <link rel="stylesheet" media="all"
+    href="./iKnow!_files/application-d8416cab594b6938f5238397ad0c17e31a148c4816a2fbcc95d890a506d29722.css">
+
+  <link rel="stylesheet" media="all"
+    href="./iKnow!_files/admin-854ba46a1d8b8702d62436f726562064923937ad0e7b2e0023598974c34f87d9.css">
+
+
+
+  <script type="text/javascript">
+    (function setupEnvironment() {
+      window.App = window.App || {};
+
+      // Load initial data from server.
+      var e = { "controller": "contents", "namespace": "contents", "layout": "marketing", "action": "show", "session": "logged-out", "role": "user", "language": "ja" };
+
+      e.isDevelopment = false;
+      e.isTest = false;
+      e.isTesting = false;
+      e.isStable = false;
+      e.isProduction = true;
+      e.assetHost = 'assets%d.iknow.jp';
+      e.assetPath = '/_assets';
+      e.assetCdns = 4;
+      e.transcoderHost = 'transcode-v2.app.engoo.com';
+
+
+      e.API = e.API || {};
+
+      e.API.version = 2;
+      e.API.token = "";
+      e.API.server = "//api.iknow.jp/";
+      e.API.key = "2ce3f515a02e816b2240e4f1";
+
+
+      App.Environment = e;
+    }());
+  </script>
+
+
+  <script
+    src="./iKnow!_files/jquery-migrate-ui-0590d18c976f9273027131bce660ae06ffab6be66a859ad1562ea790b2aee3b5.js"></script>
+
+  <meta
+    content="{&quot;about a minute ago&quot;:&quot;1分前&quot;,&quot;about an hour ago&quot;:&quot;約1時間前&quot;,&quot;add at least {count} items needed to study \u0026 publish&quot;:&quot;学習を開始するには、アイテムを %{count} 個以上追加する必要があります。&quot;,&quot;add items&quot;:&quot;コレクションに入れる&quot;,&quot;add items to course&quot;:&quot;アイテムを追加する&quot;,&quot;add to courses&quot;:&quot;このコースから始める&quot;,&quot;add to focus&quot;:&quot;学習中コースに追加&quot;,&quot;advanced&quot;:&quot;上級&quot;,&quot;almost&quot;:&quot;おしい！&quot;,&quot;am&quot;:&quot;am&quot;,&quot;app-branding.sentence-trainer&quot;:&quot;Sentence Trainer&quot;,&quot;apply&quot;:&quot;実行&quot;,&quot;badge-repeat&quot;:&quot;再出題&quot;,&quot;beginner&quot;:&quot;初級&quot;,&quot;choose a course&quot;:&quot;アイテムを追加するコースを選んでください。\u003cbr /\u003e※言語が一致しないコースには追加できません。&quot;,&quot;choose-item-difficulty&quot;:&quot;学習頻度を変更できます&quot;,&quot;course-tabs.completed-courses-no-courses&quot;:&quot;完了コースがまだありません。&quot;,&quot;course-tabs.custom-courses-no-courses&quot;:&quot;カスタムコースがありません。\u003cbr/\u003e【新規作成】からカスタムコースを作成しましょう。&quot;,&quot;course-tabs.items-zone-1&quot;:&quot;あと一歩&quot;,&quot;course-tabs.items-zone-2&quot;:&quot;マスター&quot;,&quot;course-tabs.no-results&quot;:&quot;該当するコースが見つかりません。&quot;,&quot;course-tabs.now-studying-no-courses&quot;:&quot;学習したいコースを学習中コースに設定しましょう。\u003cbr/\u003e最適な学習タイミングにあるコースが\u003cbr/\u003eページ上部にある「おすすめ学習」に表示されます。&quot;,&quot;course-tabs.saved-courses-no-courses&quot;:&quot;将来的に学習したいコースの保管庫です。\u003cbr/\u003e学習中コースに入り切らなかったコースもあとで学習に入ります。&quot;,&quot;course-tabs.started&quot;:&quot;開始&quot;,&quot;course-tabs.time-studied&quot;:&quot;学習時間&quot;,&quot;create a new course&quot;:&quot;新規作成&quot;,&quot;create custom course&quot;:&quot;カスタムコースを作成する&quot;,&quot;dashboard.recommended-next&quot;:&quot;おすすめ学習&quot;,&quot;dashboard.study-progress&quot;:&quot;プログレス&quot;,&quot;dashboard_tab.custom-courses&quot;:&quot;カスタムコース&quot;,&quot;dashboard_tab.saved-courses&quot;:&quot;あとで学習&quot;,&quot;default&quot;:&quot;デフォルト&quot;,&quot;dmm-refresh.error&quot;:&quot;アカウントチェック中にエラーが起きました。しばらくたってからもう一度お試し下さい。&quot;,&quot;dmm-refresh.not-premium&quot;:&quot;DMM英会話の有料会員ではないため、iKnow! を無料でお使いいただくことが出来ません。&quot;,&quot;dmm-refresh.unexpected-error&quot;:&quot;アカウントチェック中にエラーが起きました。サポートまでお問い合わせ下さい。&quot;,&quot;do you know this word?&quot;:&quot;このアイテムを知っていますか？&quot;,&quot;don&#39;t know&quot;:&quot;わからない&quot;,&quot;dont-know&quot;:&quot;知らない&quot;,&quot;dont-know-review&quot;:&quot;忘れた&quot;,&quot;easy&quot;:&quot;減らす&quot;,&quot;enter&quot;:&quot;決定&quot;,&quot;filter items&quot;:&quot;アイテムを検索&quot;,&quot;focused-courses&quot;:&quot;学習中コース&quot;,&quot;growl-message.all-series-courses-focused&quot;:&quot;このシリーズは全てのコースが学習中コースに追加されました&quot;,&quot;growl-message.all-series-courses-focused-error&quot;:&quot;コース追加中にエラーが起きました。もう一度お試しください。&quot;,&quot;growl-message.goal-enroll-error&quot;:&quot;コースの保存に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.goal-focus-error&quot;:&quot;コースの追加に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.goal-unenroll-error&quot;:&quot;コースの削除に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.goal-unfocus-error&quot;:&quot;コースの削除に失敗しました。もう一度お試しください。&quot;,&quot;growl-message.unexpected-error&quot;:&quot;エラーが発生しました。もう一度やり直してください。&quot;,&quot;hard&quot;:&quot;増やす&quot;,&quot;hours ago&quot;:&quot;%{hours}時間前&quot;,&quot;iknow.label&quot;:&quot;iKnow!&quot;,&quot;intermediate&quot;:&quot;中級&quot;,&quot;items added to goal&quot;:&quot;アイテムを追加しています&quot;,&quot;items-label&quot;:&quot;アイテム：&quot;,&quot;items-mastered&quot;:&quot;マスター&quot;,&quot;items-started&quot;:&quot;開始&quot;,&quot;items-to-review&quot;:&quot;要復習：&quot;,&quot;items-zone-1&quot;:&quot;あと一歩&quot;,&quot;js_iknow.annotations&quot;:&quot;注釈&quot;,&quot;js_iknow.new item&quot;:&quot;新規&quot;,&quot;js_iknow.next&quot;:&quot;次へ&quot;,&quot;js_iknow.no&quot;:&quot;いいえ&quot;,&quot;js_iknow.remove&quot;:&quot;学習から外す&quot;,&quot;js_iknow.review&quot;:&quot;復習&quot;,&quot;js_iknow.well done!&quot;:&quot;正解！&quot;,&quot;js_iknow.yes&quot;:&quot;はい&quot;,&quot;language-display-aa&quot;:&quot;アファル語&quot;,&quot;language-display-ab&quot;:&quot;アブハズ語&quot;,&quot;language-display-ae&quot;:&quot;アヴェスター語&quot;,&quot;language-display-af&quot;:&quot;アフリカーンス語&quot;,&quot;language-display-ain&quot;:&quot;アイヌ語&quot;,&quot;language-display-ak&quot;:&quot;アカン語&quot;,&quot;language-display-am&quot;:&quot;アムハラ語&quot;,&quot;language-display-an&quot;:&quot;アラゴン語&quot;,&quot;language-display-ang&quot;:&quot;古英語&quot;,&quot;language-display-ar&quot;:&quot;アラビア語&quot;,&quot;language-display-arc&quot;:&quot;アラム語&quot;,&quot;language-display-as&quot;:&quot;アッサム語&quot;,&quot;language-display-ast&quot;:&quot;アストゥリア語&quot;,&quot;language-display-av&quot;:&quot;アヴァール語&quot;,&quot;language-display-ay&quot;:&quot;アイマラ語&quot;,&quot;language-display-az&quot;:&quot;アゼルバイジャン語&quot;,&quot;language-display-ba&quot;:&quot;バシキール語&quot;,&quot;language-display-be&quot;:&quot;ベラルーシ語&quot;,&quot;language-display-bg&quot;:&quot;ブルガリア語&quot;,&quot;language-display-bi&quot;:&quot;ビスラマ語&quot;,&quot;language-display-bm&quot;:&quot;バンバラ語&quot;,&quot;language-display-bn&quot;:&quot;ベンガル語&quot;,&quot;language-display-bo&quot;:&quot;チベット語&quot;,&quot;language-display-br&quot;:&quot;ブルトン語&quot;,&quot;language-display-bs&quot;:&quot;ボスニア語&quot;,&quot;language-display-ca&quot;:&quot;カタルーニャ語&quot;,&quot;language-display-ce&quot;:&quot;チェチェン語&quot;,&quot;language-display-ch&quot;:&quot;チャモロ語&quot;,&quot;language-display-co&quot;:&quot;コルシカ語&quot;,&quot;language-display-cr&quot;:&quot;クリー語&quot;,&quot;language-display-cs&quot;:&quot;チェコ語&quot;,&quot;language-display-cu&quot;:&quot;古代教会スラヴ語&quot;,&quot;language-display-cv&quot;:&quot;チュヴァシ語&quot;,&quot;language-display-cy&quot;:&quot;ウェルシュ語&quot;,&quot;language-display-da&quot;:&quot;デンマーク語&quot;,&quot;language-display-de&quot;:&quot;ドイツ語&quot;,&quot;language-display-dv&quot;:&quot;ディベヒ語&quot;,&quot;language-display-dz&quot;:&quot;ゾンカ語&quot;,&quot;language-display-ee&quot;:&quot;エウェ語&quot;,&quot;language-display-egy&quot;:&quot;エジプト語&quot;,&quot;language-display-el&quot;:&quot;ギリシャ語&quot;,&quot;language-display-en&quot;:&quot;英語&quot;,&quot;language-display-enm&quot;:&quot;中英語&quot;,&quot;language-display-eo&quot;:&quot;エスペラント&quot;,&quot;language-display-es&quot;:&quot;スペイン語&quot;,&quot;language-display-et&quot;:&quot;エストニア語&quot;,&quot;language-display-eu&quot;:&quot;バスク語&quot;,&quot;language-display-fa&quot;:&quot;ペルシャ語&quot;,&quot;language-display-ff&quot;:&quot;フラ語&quot;,&quot;language-display-fi&quot;:&quot;フィンランド語&quot;,&quot;language-display-fj&quot;:&quot;フィジー語&quot;,&quot;language-display-fo&quot;:&quot;フェロー語&quot;,&quot;language-display-fr&quot;:&quot;フランス語&quot;,&quot;language-display-fy&quot;:&quot;フリジア語&quot;,&quot;language-display-ga&quot;:&quot;アイルランド語&quot;,&quot;language-display-gd&quot;:&quot;スコットランド・ゲール語&quot;,&quot;language-display-gl&quot;:&quot;ガリシア語&quot;,&quot;language-display-gn&quot;:&quot;グアラニー語&quot;,&quot;language-display-grc&quot;:&quot;古典ギリシア語&quot;,&quot;language-display-gu&quot;:&quot;グジャラート語&quot;,&quot;language-display-gv&quot;:&quot;マン島語&quot;,&quot;language-display-ha&quot;:&quot;ハウサ語&quot;,&quot;language-display-haw&quot;:&quot;ハワイ語&quot;,&quot;language-display-he&quot;:&quot;ヘブライ語&quot;,&quot;language-display-hi&quot;:&quot;ヒンディー語&quot;,&quot;language-display-hit&quot;:&quot;ヒッタイト語&quot;,&quot;language-display-ho&quot;:&quot;ヒリモトゥ語&quot;,&quot;language-display-hr&quot;:&quot;クロアチア語&quot;,&quot;language-display-ht&quot;:&quot;ハイチクレオール語&quot;,&quot;language-display-hu&quot;:&quot;ハンガリー語&quot;,&quot;language-display-hy&quot;:&quot;アルメニア語&quot;,&quot;language-display-hz&quot;:&quot;ヘレロ語&quot;,&quot;language-display-ia&quot;:&quot;インターリングア&quot;,&quot;language-display-id&quot;:&quot;インドネシア語&quot;,&quot;language-display-ig&quot;:&quot;イボ語&quot;,&quot;language-display-ii&quot;:&quot;ロロ語&quot;,&quot;language-display-ik&quot;:&quot;イヌピア語&quot;,&quot;language-display-io&quot;:&quot;イド語&quot;,&quot;language-display-is&quot;:&quot;アイスランド語&quot;,&quot;language-display-it&quot;:&quot;イタリア語&quot;,&quot;language-display-iu&quot;:&quot;イヌイット語&quot;,&quot;language-display-ja&quot;:&quot;日本語&quot;,&quot;language-display-jbo&quot;:&quot;ロジバン&quot;,&quot;language-display-jv&quot;:&quot;ジャワ語&quot;,&quot;language-display-ka&quot;:&quot;グルジア語&quot;,&quot;language-display-kg&quot;:&quot;コンゴ語&quot;,&quot;language-display-ki&quot;:&quot;キクユ語&quot;,&quot;language-display-kj&quot;:&quot;クワンヤマ語&quot;,&quot;language-display-kk&quot;:&quot;カザフ語&quot;,&quot;language-display-kl&quot;:&quot;グリーンランド語&quot;,&quot;language-display-km&quot;:&quot;クメール語&quot;,&quot;language-display-kn&quot;:&quot;カンナダ語&quot;,&quot;language-display-ko&quot;:&quot;韓国語&quot;,&quot;language-display-kr&quot;:&quot;カヌリ語&quot;,&quot;language-display-ks&quot;:&quot;カシミール語&quot;,&quot;language-display-ku&quot;:&quot;クルド語&quot;,&quot;language-display-kv&quot;:&quot;コミ語&quot;,&quot;language-display-kw&quot;:&quot;コーンウォール語&quot;,&quot;language-display-ky&quot;:&quot;キルギス語&quot;,&quot;language-display-la&quot;:&quot;ラテン語&quot;,&quot;language-display-lb&quot;:&quot;ルクセンブルク語&quot;,&quot;language-display-lg&quot;:&quot;ガンダ語&quot;,&quot;language-display-li&quot;:&quot;リンブルフ語&quot;,&quot;language-display-ln&quot;:&quot;リンガラ語&quot;,&quot;language-display-lo&quot;:&quot;ラーオ語&quot;,&quot;language-display-lt&quot;:&quot;リトアニア語&quot;,&quot;language-display-lu&quot;:&quot;ルバ語&quot;,&quot;language-display-lv&quot;:&quot;ラトビア語&quot;,&quot;language-display-mg&quot;:&quot;マダガスカル語&quot;,&quot;language-display-mh&quot;:&quot;マーシャル語&quot;,&quot;language-display-mi&quot;:&quot;マオリ語&quot;,&quot;language-display-mk&quot;:&quot;マケドニア語&quot;,&quot;language-display-ml&quot;:&quot;マラヤーラム語&quot;,&quot;language-display-mn&quot;:&quot;モンゴル語&quot;,&quot;language-display-mo&quot;:&quot;モルダビア語&quot;,&quot;language-display-mr&quot;:&quot;マラッタ語&quot;,&quot;language-display-ms&quot;:&quot;マレー語&quot;,&quot;language-display-mt&quot;:&quot;マルタ語&quot;,&quot;language-display-my&quot;:&quot;ビルマ語&quot;,&quot;language-display-na&quot;:&quot;ナウル語&quot;,&quot;language-display-nd&quot;:&quot;北ンデベレ語&quot;,&quot;language-display-ne&quot;:&quot;ネパール語&quot;,&quot;language-display-ng&quot;:&quot;ンドンガ語&quot;,&quot;language-display-nl&quot;:&quot;オランダ語&quot;,&quot;language-display-no&quot;:&quot;ノルウェー語&quot;,&quot;language-display-nr&quot;:&quot;南ンデベレ語&quot;,&quot;language-display-nv&quot;:&quot;ナヴァホ語&quot;,&quot;language-display-ny&quot;:&quot;チェワ語&quot;,&quot;language-display-oc&quot;:&quot;オック語&quot;,&quot;language-display-och&quot;:&quot;古文 (中国語）&quot;,&quot;language-display-oj&quot;:&quot;オジブワ語&quot;,&quot;language-display-ojp&quot;:&quot;古文 (日本語）&quot;,&quot;language-display-om&quot;:&quot;オロモ語&quot;,&quot;language-display-or&quot;:&quot;オリヤー語&quot;,&quot;language-display-os&quot;:&quot;オセット語&quot;,&quot;language-display-pa&quot;:&quot;パンジャーブ語&quot;,&quot;language-display-pl&quot;:&quot;ポーランド語&quot;,&quot;language-display-ps&quot;:&quot;パシュトー語&quot;,&quot;language-display-pt&quot;:&quot;ポルトガル語&quot;,&quot;language-display-qu&quot;:&quot;ケチュア語&quot;,&quot;language-display-qya&quot;:&quot;クウェンヤ&quot;,&quot;language-display-rm&quot;:&quot;レト・ロマン語&quot;,&quot;language-display-rn&quot;:&quot;ルンディ語&quot;,&quot;language-display-ro&quot;:&quot;ルーマニア語&quot;,&quot;language-display-ru&quot;:&quot;ロシア語&quot;,&quot;language-display-rw&quot;:&quot;キンヤルワンダ語&quot;,&quot;language-display-sa&quot;:&quot;サンスクリット&quot;,&quot;language-display-sc&quot;:&quot;サルデーニャ語&quot;,&quot;language-display-sd&quot;:&quot;シンディー語&quot;,&quot;language-display-se&quot;:&quot;サモス語&quot;,&quot;language-display-sg&quot;:&quot;サンゴ語&quot;,&quot;language-display-si&quot;:&quot;シンハラ語&quot;,&quot;language-display-sjn&quot;:&quot;シンダール語&quot;,&quot;language-display-sk&quot;:&quot;スロバキア語&quot;,&quot;language-display-sl&quot;:&quot;スロベニア語&quot;,&quot;language-display-sm&quot;:&quot;サモア語&quot;,&quot;language-display-sn&quot;:&quot;ショナ語&quot;,&quot;language-display-so&quot;:&quot;ソマリ語&quot;,&quot;language-display-sq&quot;:&quot;アルバニア語&quot;,&quot;language-display-sr&quot;:&quot;セルビア語&quot;,&quot;language-display-ss&quot;:&quot;スワージ語&quot;,&quot;language-display-st&quot;:&quot;南ソト語&quot;,&quot;language-display-su&quot;:&quot;スンダ語&quot;,&quot;language-display-sv&quot;:&quot;スウェーデン語&quot;,&quot;language-display-sw&quot;:&quot;スワヒリ語&quot;,&quot;language-display-ta&quot;:&quot;タミル語&quot;,&quot;language-display-te&quot;:&quot;テルグ語&quot;,&quot;language-display-tg&quot;:&quot;タジク語&quot;,&quot;language-display-th&quot;:&quot;タイ語&quot;,&quot;language-display-ti&quot;:&quot;タジク語&quot;,&quot;language-display-tk&quot;:&quot;トルクメン語&quot;,&quot;language-display-tl&quot;:&quot;タガログ語&quot;,&quot;language-display-tlh&quot;:&quot;クリンゴン語&quot;,&quot;language-display-tn&quot;:&quot;ツワナ語&quot;,&quot;language-display-to&quot;:&quot;トンガ語&quot;,&quot;language-display-tr&quot;:&quot;トルコ語&quot;,&quot;language-display-ts&quot;:&quot;ツォンガ語&quot;,&quot;language-display-tt&quot;:&quot;タタール語&quot;,&quot;language-display-tw&quot;:&quot;トウィ語&quot;,&quot;language-display-txb&quot;:&quot;トカラ語 (西)&quot;,&quot;language-display-ty&quot;:&quot;タヒチ語&quot;,&quot;language-display-ug&quot;:&quot;ウイグル語&quot;,&quot;language-display-uk&quot;:&quot;ウクライナ語&quot;,&quot;language-display-ur&quot;:&quot;ウルドゥー語&quot;,&quot;language-display-uz&quot;:&quot;ウズベク語&quot;,&quot;language-display-ve&quot;:&quot;ベンダ語&quot;,&quot;language-display-vec&quot;:&quot;ヴェネツィア語&quot;,&quot;language-display-vi&quot;:&quot;ベトナム語&quot;,&quot;language-display-vo&quot;:&quot;ヴォラピュク&quot;,&quot;language-display-wa&quot;:&quot;ワロン語&quot;,&quot;language-display-wo&quot;:&quot;ウォロフ語&quot;,&quot;language-display-xh&quot;:&quot;コサ語&quot;,&quot;language-display-xto&quot;:&quot;トカラ語 (東)&quot;,&quot;language-display-yi&quot;:&quot;イディッシュ語&quot;,&quot;language-display-za&quot;:&quot;チワン語&quot;,&quot;language-display-zh-hans&quot;:&quot;中国語（簡）&quot;,&quot;language-display-zh-hant&quot;:&quot;中国語（繁）&quot;,&quot;language-display-zh-hk&quot;:&quot;広東語&quot;,&quot;language-display-zh-tw&quot;:&quot;台湾語&quot;,&quot;language-display-zu&quot;:&quot;ズールー語&quot;,&quot;language-label&quot;:&quot;言語：&quot;,&quot;launch&quot;:&quot;start&quot;,&quot;less than a minute ago&quot;:&quot;1分以内&quot;,&quot;level-label&quot;:&quot;レベル：&quot;,&quot;lower intermediate&quot;:&quot;初中級&quot;,&quot;mark-as-incorrect&quot;:&quot;不正解にする&quot;,&quot;master items&quot;:&quot;マスターアイテムにする&quot;,&quot;minutes ago&quot;:&quot;%{minutes}分前&quot;,&quot;mistakes&quot;:&quot;不正解&quot;,&quot;move-to-now-studying&quot;:&quot;学習中コースに追加&quot;,&quot;move-to-saved&quot;:&quot;あとで学習に追加&quot;,&quot;my_courses.review_mode&quot;:&quot;表示&quot;,&quot;next-review&quot;:&quot;次回の学習：&quot;,&quot;next-study-time&quot;:&quot;次回の学習&quot;,&quot;no-items-eligible-for-review&quot;:&quot;次回の学習： 復習モードOFF&quot;,&quot;not-started&quot;:&quot;開始前&quot;,&quot;not-well&quot;:&quot;よく知らない&quot;,&quot;not-well-review&quot;:&quot;あまり覚えてない&quot;,&quot;note&quot;:&quot;注釈&quot;,&quot;now&quot;:&quot;今がオススメ&quot;,&quot;now you say it&quot;:&quot;音声に合わせて発音しましょう&quot;,&quot;off&quot;:&quot;オフ&quot;,&quot;ok&quot;:&quot;決定&quot;,&quot;on&quot;:&quot;オン&quot;,&quot;on this date at&quot;:&quot;%{month}%{date}日 %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;on this date with year at&quot;:&quot;%{year}年%{month}%{date}日 %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;over a year from now&quot;:&quot;1年後&quot;,&quot;play audio&quot;:&quot;音声再生&quot;,&quot;pm&quot;:&quot;pm&quot;,&quot;pos.adjectival noun&quot;:&quot;形容動詞&quot;,&quot;pos.adjective&quot;:&quot;形容詞&quot;,&quot;pos.adverb&quot;:&quot;副詞&quot;,&quot;pos.auxiliary verb&quot;:&quot;助動詞&quot;,&quot;pos.conjunction&quot;:&quot;接続詞&quot;,&quot;pos.determiner&quot;:&quot;限定詞&quot;,&quot;pos.interjection&quot;:&quot;感動詞&quot;,&quot;pos.interrogative&quot;:&quot;疑問詞&quot;,&quot;pos.kana&quot;:&quot;かな&quot;,&quot;pos.none&quot;:&quot;--&quot;,&quot;pos.noun&quot;:&quot;名詞&quot;,&quot;pos.noun abbreviation&quot;:&quot;略語&quot;,&quot;pos.particle&quot;:&quot;その他（冠詞、助詞など）&quot;,&quot;pos.phrasal verb&quot;:&quot;句動詞&quot;,&quot;pos.phrase&quot;:&quot;熟語&quot;,&quot;pos.prefix&quot;:&quot;接頭辞&quot;,&quot;pos.preposition&quot;:&quot;前置詞&quot;,&quot;pos.pronoun&quot;:&quot;代名詞&quot;,&quot;pos.proper noun&quot;:&quot;固有名詞&quot;,&quot;pos.suffix&quot;:&quot;接尾辞&quot;,&quot;pos.verb&quot;:&quot;動詞&quot;,&quot;pos.verbal noun&quot;:&quot;サ変接続&quot;,&quot;prompt-new&quot;:&quot;このアイテムを知っていますか？&quot;,&quot;prompt-repeat&quot;:&quot;再出題です。覚えていますか？&quot;,&quot;prompt-review&quot;:&quot;このアイテムを覚えていますか？&quot;,&quot;radial-progress.level&quot;:&quot;レベル&quot;,&quot;ready-label&quot;:&quot;要復習：&quot;,&quot;remove-from-saved&quot;:&quot;あとで学習から削除&quot;,&quot;remove-from-studying&quot;:&quot;学習中コースから削除&quot;,&quot;reset items&quot;:&quot;プログレスをリセットする&quot;,&quot;response&quot;:&quot;レスポンス（アイテムの訳）&quot;,&quot;review-mode-only&quot;:&quot;復習モードON&quot;,&quot;save-for-later&quot;:&quot;あとで学習に追加&quot;,&quot;search-courses-by-title&quot;:&quot;コース名で検索&quot;,&quot;self-assessment.check&quot;:&quot;診断する&quot;,&quot;sentence-builder-quiz-instructions&quot;:&quot;単語を正しい順番にクリック、もしくはドラッグして、文章を完成させましょう。&quot;,&quot;sentence-builder-recall-listening-instructions&quot;:&quot;英文を聞いて、次の画面で文章を組み立てる準備をしましょう。&quot;,&quot;sentence-builder-recall-reading-instructions&quot;:&quot;文章を読んで、英語ではどのように言うか、考えましょう。&quot;,&quot;sentences&quot;:&quot;センテンス&quot;,&quot;sentences-label&quot;:&quot;センテンス：&quot;,&quot;series-label&quot;:&quot;シリーズ：&quot;,&quot;settings.label&quot;:&quot;設定&quot;,&quot;show-hint&quot;:&quot;ヒントを表示&quot;,&quot;skip items&quot;:&quot;学習対象から外す&quot;,&quot;sort by&quot;:&quot;並び替え&quot;,&quot;sort-by&quot;:&quot;並び替え&quot;,&quot;sort.all&quot;:&quot;すべて&quot;,&quot;sort.cue&quot;:&quot;アイテム&quot;,&quot;sort.part of speech&quot;:&quot;品詞&quot;,&quot;sort.recommended&quot;:&quot;おすすめ順&quot;,&quot;spelling&quot;:&quot;スペル練習&quot;,&quot;start&quot;:&quot;スタート&quot;,&quot;stroke order&quot;:&quot;書き順&quot;,&quot;study progress&quot;:&quot;プログレス順&quot;,&quot;study-all.label&quot;:&quot;まとめて学習&quot;,&quot;study-details-tab.completed-courses&quot;:&quot;クリアコース&quot;,&quot;study-more-less-dialogue-description&quot;:&quot;「増やす」「減らす」のボタンで、アイテムの学習頻度を調整できます。「増やす」を選ぶと復習のタイミングが早まり、「減らす」を選ぶと次回出題されるまでのインターバルが長くなります。\u003cbr\u003e\u003cbr\u003eあなたの学習効率を高めるための機能ですので、必ず毎回クリックする必要はありません。&quot;,&quot;study-more-less-dialogue-header&quot;:&quot;学習頻度&quot;,&quot;study-progress.items-started&quot;:&quot;合計&quot;,&quot;study-progress.items-zone-0&quot;:&quot;まだまだ&quot;,&quot;study-progress.items-zone-1&quot;:&quot;あと一歩&quot;,&quot;study-progress.items-zone-2&quot;:&quot;マスター&quot;,&quot;study-progress.label&quot;:&quot;プログレス&quot;,&quot;study-time.header&quot;:&quot;学習時間&quot;,&quot;study-time.items&quot;:&quot;iKnow!&quot;,&quot;study-time.sentences&quot;:&quot;Sentence Trainer&quot;,&quot;study-time.total&quot;:&quot;合計&quot;,&quot;this week at&quot;:&quot;%{weekday} %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;too bad!&quot;:&quot;不正解！&quot;,&quot;unskip&quot;:&quot;学習対象に戻す&quot;,&quot;upper intermediate&quot;:&quot;中上級&quot;,&quot;users-label&quot;:&quot;ユーザー数：&quot;,&quot;very-well&quot;:&quot;よく知っている&quot;,&quot;very-well-review&quot;:&quot;よく覚えている&quot;,&quot;weak-items&quot;:&quot;要復習：&quot;,&quot;well&quot;:&quot;知っている&quot;,&quot;well-review&quot;:&quot;覚えている&quot;,&quot;yesterday at&quot;:&quot;昨日 %{hours}:%{minutes}%{twelve_hour}&quot;,&quot;you have no custom courses to add items&quot;:&quot;アイテムを追加するコースがないか、言語が一致するコースがありません。\u003cbr/\u003e追加するにはカスタムコースを作成してください。&quot;,&quot;{time} days from now&quot;:&quot;%{time}日後&quot;,&quot;{time} hours from now&quot;:&quot;%{time}時間後&quot;,&quot;{time} minutes from now&quot;:&quot;%{time} 分後&quot;,&quot;{time} months from now&quot;:&quot;%{time}ヶ月後&quot;,&quot;{time} weeks from now&quot;:&quot;%{time}週間後&quot;,&quot;january [month]&quot;:&quot;1月&quot;,&quot;february [month]&quot;:&quot;2月&quot;,&quot;march [month]&quot;:&quot;3月&quot;,&quot;april [month]&quot;:&quot;4月&quot;,&quot;may [month]&quot;:&quot;5月&quot;,&quot;june [month]&quot;:&quot;6月&quot;,&quot;july [month]&quot;:&quot;7月&quot;,&quot;august [month]&quot;:&quot;8月&quot;,&quot;september [month]&quot;:&quot;9月&quot;,&quot;october [month]&quot;:&quot;10月&quot;,&quot;november [month]&quot;:&quot;11月&quot;,&quot;december [month]&quot;:&quot;12月&quot;,&quot;sunday [weekday]&quot;:&quot;日曜日&quot;,&quot;monday [weekday]&quot;:&quot;月曜日&quot;,&quot;tuesday [weekday]&quot;:&quot;火曜日&quot;,&quot;wednesday [weekday]&quot;:&quot;水曜日&quot;,&quot;thursday [weekday]&quot;:&quot;木曜日&quot;,&quot;friday [weekday]&quot;:&quot;金曜日&quot;,&quot;saturday [weekday]&quot;:&quot;土曜日&quot;,&quot;achievements.study-time&quot;:&quot;達成率&quot;,&quot;achievements.items-completed&quot;:&quot;達成率&quot;,&quot;achievements.weekly-target&quot;:&quot;達成率&quot;,&quot;achievements.share-items-completed-{count}&quot;:&quot;アチーブメント獲得！%{count}アイテムをマスターしました - iKnow!&quot;,&quot;achievements.share-weekly-target-{count}&quot;:&quot;アチーブメント獲得！週間ターゲットを%{count}回クリアしました - iKnow!&quot;,&quot;achievements.share-study-time-{count}&quot;:&quot;アチーブメント獲得！%{count}時間学習しました - iKnow!&quot;,&quot;items added.&quot;:&quot;アイテムを追加しました。&quot;,&quot;added items to collected set.&quot;:&quot;アイテムをマイコレクションに入れました。&quot;,&quot;unskipped items.&quot;:&quot;学習対象に戻しました&quot;,&quot;skipped items.&quot;:&quot;学習対象から外しました&quot;,&quot;do you really want to remove all progress on the selected items?&quot;:&quot;選択したアイテムの学習データがリセットされますが、よろしいですか？&quot;,&quot;do you really want to mark selected items as mastered?&quot;:&quot;プログレスを100％に設定し、完了アイテムに入れますか？&quot;,&quot;items marked as completed.&quot;:&quot;完了アイテムとして設定されました&quot;,&quot;items progress deleted.&quot;:&quot;アイテムの学習データがリセットされました&quot;,&quot;you must be logged in to do that.&quot;:&quot;ログインが必要です。&quot;,&quot;register to see more&quot;:&quot;新規登録はこちら&quot;,&quot;js_templates.sentences&quot;:&quot;センテンス&quot;,&quot;js_templates.delete&quot;:&quot;削除&quot;,&quot;edit&quot;:&quot;編集&quot;,&quot;add sentence&quot;:&quot;センテンス追加&quot;,&quot;error.label&quot;:&quot;エラー&quot;,&quot;review items&quot;:&quot;復習アイテム&quot;,&quot;started items&quot;:&quot;開始アイテム&quot;,&quot;completed items&quot;:&quot;マスターアイテム&quot;,&quot;study time&quot;:&quot;学習時間&quot;,&quot;listening&quot;:&quot;センテンス&quot;,&quot;speaking&quot;:&quot;スピーキング&quot;,&quot;browser-close-unsaveable&quot;:&quot;このウィンドウを閉じると、学習データは保存されません。&quot;,&quot;{month} {day}{suffix}, {year}&quot;:&quot;translation missing: ja.{month} {day}{suffix}, {year}&quot;,&quot;{sec}s&quot;:&quot;%{sec}秒&quot;,&quot;{min}m {sec}s&quot;:&quot;%{min}\u003cspan\u003em\u003c/span\u003e %{sec}\u003cspan\u003es\u003c/span\u003e&quot;,&quot;{min}m&quot;:&quot;%{min}\u003cspan\u003em\u003c/span\u003e&quot;,&quot;{hour}h {min}m&quot;:&quot;%{hour}\u003cspan\u003eh\u003c/span\u003e%{min}\u003cspan\u003em\u003c/span\u003e&quot;,&quot;{hour}h&quot;:&quot;%{hour}h&quot;,&quot;{sec} sec&quot;:&quot;%{sec} s&quot;,&quot;{min} min&quot;:&quot;%{min} \u003cspan\u003emin\u003c/span\u003e&quot;,&quot;{hour} hour&quot;:&quot;%{hour} \u003cspan\u003ehour\u003c/span\u003e&quot;,&quot;{sec} second&quot;:&quot;%{sec}\u003cspan\u003esecond\u003c/span\u003e&quot;,&quot;{sec} seconds&quot;:&quot;%{sec}\u003cspan\u003eseconds\u003c/span\u003e&quot;,&quot;{min} min {sec} sec&quot;:&quot;%{min} min %{sec} sec&quot;,&quot;{min} minute&quot;:&quot;%{min} \u003cspan\u003eminute\u003c/span\u003e&quot;,&quot;{min} minutes&quot;:&quot;%{min} \u003cspan\u003eminutes\u003c/span\u003e&quot;,&quot;{hour} hour {min} min&quot;:&quot;%{hour} \u003cspan\u003ehour\u003c/span\u003e %{min} \u003cspan\u003emin\u003c/span\u003e&quot;,&quot;{hour} hours {min} min&quot;:&quot;%{hour} \u003cspan\u003e時間\u003c/span\u003e %{min} \u003cspan\u003e分\u003c/span\u003e&quot;,&quot;add&quot;:&quot;追加する&quot;,&quot;remove&quot;:&quot;削除&quot;,&quot;update&quot;:&quot;更新&quot;,&quot;cancel&quot;:&quot;キャンセル&quot;,&quot;cue&quot;:&quot;アイテム（単語またはフレーズ）&quot;,&quot;transliteration&quot;:&quot;音訳&quot;,&quot;part of speech&quot;:&quot;品詞&quot;,&quot;you can confirm/edit auto-generated sound after added this item&quot;:&quot;※音声の確認・編集は「追加する」をクリックしてから行えます。&quot;,&quot;exceeded recommended length&quot;:&quot;文字数制限を超えています&quot;,&quot;file upload failed&quot;:&quot;アップロードに失敗しました。\nファイルサイズとファイル形式を確認してください。&quot;}"
+    id="iknow-strings">
+
+
+
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M4TJC5" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M4TJC5');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script src="./iKnow!_files/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      < !--//-->
+  < ![CDATA[//><!--
+      try {
+      var pageTracker = _gat._getTracker('UA-20259286-1');
+      pageTracker._setDomainName("none");
+      pageTracker._initData();
+      pageTracker._trackPageview('/courses?search_category=courses&search_query=japanese');
+    } catch (err) { }
+      //--><!]]>
+  </script>
+
+
+
+
+
+
+  <style type="text/css" data-aphrodite="">
+    .answerFillInTheBlankLetter_1352g9d {
+      display: inline-block !important;
+      border-bottom: 2px solid white !important;
+      margin-right: 2px !important;
+      text-align: center !important;
+      vertical-align: top !important;
+      width: 0.9em !important;
+      height: 1.2em !important;
+    }
+
+    .answerLetterSpace_1b9khtd {
+      display: inline-block !important;
+      width: 0.6em !important;
+    }
+
+    .screen_14y9rfu {
+      line-height: 1.2;
+    }
+
+    .message_120kpkz {
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .answer_xtwn29 {
+      position: absolute;
+      top: 70px;
+      left: 100px;
+      right: 100px;
+    }
+
+    .answerMultipleChoice_95fr7n {
+      color: #2255aa;
+      background-color: #bbddff;
+      border-radius: 5px;
+      padding: 10px 75px 10px 15px;
+      height: 60px;
+      max-height: 60px;
+      font-size: 24px;
+    }
+
+    .answerFillInTheBlank_rpyfv1 {
+      font-size: 28px;
+      text-align: center;
+      height: 90px;
+    }
+
+    .answerFillInTheBlankContent_1c3jk0w {
+      display: inline-block;
+      vertical-align: middle;
+      max-height: 90px;
+    }
+
+    .answerCorrectIcon_1ajwg31 {
+      width: 60px;
+      height: 60px;
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    .answerMultipleChoiceCorrectIcon_hxnxg3 {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    .answerFillInTheBlankCorrectIcon_19gaygm {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: -80px;
+      margin-right: 15px;
+    }
+
+    .sentenceContainer_1rqegq0 {
+      position: absolute;
+      top: 170px;
+      left: 100px;
+      right: 100px;
+    }
+
+    .sentenceWithImage_1iulboo {
+      margin-right: 210px;
+    }
+
+    .sentenceImage_1yxlvia {
+      float: right;
+      margin-left: 10px;
+      margin-top: 10px;
+      width: 180px;
+      height: 166px;
+      border-radius: 8px;
+      background-position: center;
+      background-size: 180px 168px;
+    }
+
+    .sentenceContent_jnr41a {
+      height: 80px;
+      max-height: 80px;
+    }
+
+    .sentenceSoundPlayer_18unzmu {
+      position: absolute;
+      right: 100%;
+      padding-right: 5px;
+      line-height: 31px;
+      font-size: 20px;
+    }
+
+    .sentenceText_uwti5r {
+      font-size: 26px;
+      vertical-align: middle;
+    }
+
+    .sentenceTransliteration_1ye2x2y {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    .sentenceTranslation_1clud0g {
+      margin-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      padding-top: 15px;
+      font-size: 22px;
+      max-height: 80px;
+    }
+
+    .hidden_yr17nz {
+      opacity: 0;
+    }
+
+    .fadeIn_qqtxzr {
+      -webkit-transition: opacity 500ms;
+      transition: opacity 500ms;
+    }
+
+    .navStudyLessMore_1baujp1 {
+      min-width: 80px !important;
+    }
+
+    .modal_okogqe {
+      max-width: 500px;
+    }
+
+    .modalContent_ke4dn3 {
+      padding: 15px;
+    }
+
+    .modalButtonContainer_1pcc5hm {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .bottomMessage_1b6dmve {
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+  <meta http-equiv="origin-trial"
+    content="A+sitaPn3hlQ8QipTsncwHz+k1NvfPtFsQqIOiD8GK3M9v9XCeQqlF7x1P9AVJdoYTiJPZXZc5XZYpwc10fH4wEAAACfeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGVhZHNlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9">
+  <script src="./iKnow!_files/f.txt"></script>
+  <style type="text/css">
+    .fancybox-margin {
+      margin-right: 15px;
+    }
+  </style>
+  <style>
+    .BDTLL_icon_ok {
+      background-image: url(data:image/png;base64,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);
+    }
+
+    .BDTLL_icon_critical {
+      background-image: url(data:image/png;base64,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);
+    }
+
+    .BDTLL_icon_alert {
+      background-image: url(data:image/png;base64,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);
+    }
+
+    .BDTLL_icon_disabled {
+      background-image: url(data:image/png;base64,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);
+    }
+
+    .BDTLL_icon_whitelisted {
+      background-image: url(data:image/png;base64,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);
+    }
+
+    .BDTLL_Search_Popup {
+      position: absolute !important;
+      min-height: 70px !important;
+
+      border-style: solid !important;
+      border-width: 1px !important;
+      border-radius: 5px !important;
+
+      overflow: hidden !important;
+      z-index: 999999999999999 !important;
+
+      background-color: rgb(255, 255, 255) !important;
+      border-color: rgba(100, 100, 100, 0.9) !important;
+    }
+
+    .BDTLL_Search_Popup>.BDTLL_left_box {
+      position: absolute !important;
+      top: 0px !important;
+      height: auto !important;
+      bottom: 0px !important;
+
+      left: 0px !important;
+      width: 92px !important;
+
+      background-size: 50px 50px !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+
+      background-color: rgb(240, 242, 246) !important;
+    }
+
+    .BDTLL_Search_Popup>.BDTLL_right_box {
+      display: inline-block !important;
+      margin-left: 92px !important;
+      width: 210pt !important;
+
+      box-sizing: border-box !important;
+      padding-left: 10px !important;
+      padding-right: 5px !important;
+    }
+
+    .BDTLL_Search_Popup p {
+      font-family: 'SFProText-Regular' !important;
+      white-space: pre-wrap !important;
+      word-wrap: normal !important;
+      margin: 0px !important;
+      padding: 0px !important;
+      text-align: left;
+    }
+
+    .BDTLL_Search_Popup .BDTLL_title {
+      font-size: 16px !important;
+      margin-top: 12px !important;
+    }
+
+    .BDTLL_Search_Popup .BDTLL_description {
+      font-size: 12px !important;
+      margin-top: 5px !important;
+    }
+
+    .BDTLL_Search_Popup .BDTLL_web_protection {
+      font-size: 11px !important;
+      margin-top: 15px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .BDTLL_Search_Popup .BDTLL_strong {
+      color: rgb(7, 20, 45) !important;
+    }
+
+    .BDTLL_Search_Popup .BDTLL_mild {
+      color: rgb(81, 91, 109) !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .BDTLL_Search_Popup {
+        background-color: rgb(56, 67, 87) !important;
+        border-color: rgba(169, 169, 169, 0.9) !important;
+      }
+
+      .BDTLL_Search_Popup>.BDTLL_left_box {
+        background-color: rgb(7, 20, 45) !important;
+      }
+
+      .BDTLL_Search_Popup .BDTLL_strong {
+        color: rgb(239, 241, 249) !important;
+      }
+
+      .BDTLL_Search_Popup .BDTLL_mild {
+        color: rgb(217, 217, 217) !important;
+      }
+    }
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3BhZ2VzL2FuYWx5emVyUG9wdXAvYW5hbHl6ZXJQYWdlU3RhdHVzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHlEQUFnRDtBQUNwRDs7QUFFQTtJQUNJLHlEQUFzRDtBQUMxRDs7QUFFQTtJQUNJLHlEQUFtRDtBQUN2RDs7QUFFQTtJQUNJLHlEQUFzRDtBQUMxRDs7QUFFQTtJQUNJLHlEQUF5RDtBQUM3RDs7QUFFQTtDQUNDLDZCQUE2QjtDQUM3QiwyQkFBMkI7O0NBRTNCLDhCQUE4QjtDQUM5Qiw0QkFBNEI7Q0FDNUIsNkJBQTZCOztDQUU3QiwyQkFBMkI7Q0FDM0IsbUNBQW1DOztJQUVoQywrQ0FBK0M7SUFDL0MsaURBQWlEO0FBQ3JEOztBQUVBO0NBQ0MsNkJBQTZCO0NBQzdCLG1CQUFtQjtDQUNuQix1QkFBdUI7Q0FDdkIsc0JBQXNCOztDQUV0QixvQkFBb0I7Q0FDcEIsc0JBQXNCOztDQUV0QixxQ0FBcUM7Q0FDckMsdUNBQXVDO0NBQ3ZDLHNDQUFzQzs7SUFFbkMsK0NBQStDO0FBQ25EOztBQUVBO0NBQ0MsZ0NBQWdDO0NBQ2hDLDRCQUE0QjtDQUM1Qix1QkFBdUI7O0NBRXZCLGlDQUFpQztDQUNqQyw2QkFBNkI7SUFDMUIsNkJBQTZCO0FBQ2pDOztBQUVBO0lBQ0ksMkNBQTJDO0lBQzNDLGdDQUFnQztJQUNoQyw0QkFBNEI7SUFDNUIsc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixnQkFBZ0I7QUFDcEI7O0FBRUE7Q0FDQywwQkFBMEI7Q0FDMUIsMkJBQTJCO0FBQzVCOztBQUVBO0NBQ0MsMEJBQTBCO0NBQzFCLDBCQUEwQjtBQUMzQjs7QUFFQTtDQUNDLDBCQUEwQjtDQUMxQiwyQkFBMkI7Q0FDM0IsOEJBQThCO0FBQy9COztBQUVBO0lBQ0ksZ0NBQWdDO0FBQ3BDOztBQUVBO0lBQ0ksa0NBQWtDO0FBQ3RDOztBQUVBO0lBQ0k7UUFDSSw0Q0FBNEM7UUFDNUMsaURBQWlEO0lBQ3JEOztJQUVBO1FBQ0ksMkNBQTJDO0lBQy9DOztJQUVBO1FBQ0ksb0NBQW9DO0lBQ3hDOztJQUVBO1FBQ0ksb0NBQW9DO0lBQ3hDO0FBQ0oiLCJzb3VyY2VzQ29udGVudCI6WyIuQkRUTExfaWNvbl9vayB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uL2ltZy9hbmFseXplcl9vay5wbmcpO1xufVxuXG4uQkRUTExfaWNvbl9jcml0aWNhbCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uL2ltZy9hbmFseXplcl9jcml0aWNhbC5wbmcpO1xufVxuXG4uQkRUTExfaWNvbl9hbGVydCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uL2ltZy9hbmFseXplcl9hbGVydC5wbmcpO1xufVxuXG4uQkRUTExfaWNvbl9kaXNhYmxlZCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uL2ltZy9hbmFseXplcl9kaXNhYmxlZC5wbmcpO1xufVxuXG4uQkRUTExfaWNvbl93aGl0ZWxpc3RlZCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uL2ltZy9hbmFseXplcl93aGl0ZWxpc3RlZC5wbmcpO1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwIHtcblx0cG9zaXRpb246IGFic29sdXRlICFpbXBvcnRhbnQ7XG5cdG1pbi1oZWlnaHQ6IDcwcHggIWltcG9ydGFudDtcblxuXHRib3JkZXItc3R5bGU6IHNvbGlkICFpbXBvcnRhbnQ7XG5cdGJvcmRlci13aWR0aDogMXB4ICFpbXBvcnRhbnQ7XG5cdGJvcmRlci1yYWRpdXM6IDVweCAhaW1wb3J0YW50O1xuXG5cdG92ZXJmbG93OiBoaWRkZW4gIWltcG9ydGFudDtcblx0ei1pbmRleDogOTk5OTk5OTk5OTk5OTk5ICFpbXBvcnRhbnQ7XG5cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSkgIWltcG9ydGFudDtcbiAgICBib3JkZXItY29sb3I6IHJnYmEoMTAwLCAxMDAsIDEwMCwgMC45KSAhaW1wb3J0YW50O1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwID4gLkJEVExMX2xlZnRfYm94IHtcblx0cG9zaXRpb246IGFic29sdXRlICFpbXBvcnRhbnQ7XG5cdHRvcDogMHB4ICFpbXBvcnRhbnQ7XG5cdGhlaWdodDogYXV0byAhaW1wb3J0YW50O1xuXHRib3R0b206IDBweCAhaW1wb3J0YW50O1xuXG5cdGxlZnQ6IDBweCAhaW1wb3J0YW50O1xuXHR3aWR0aDogOTJweCAhaW1wb3J0YW50O1xuXG5cdGJhY2tncm91bmQtc2l6ZTogNTBweCA1MHB4ICFpbXBvcnRhbnQ7XG5cdGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQgIWltcG9ydGFudDtcblx0YmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyICFpbXBvcnRhbnQ7XG5cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQwLCAyNDIsIDI0NikgIWltcG9ydGFudDtcbn1cblxuLkJEVExMX1NlYXJjaF9Qb3B1cCA+IC5CRFRMTF9yaWdodF9ib3gge1xuXHRkaXNwbGF5OiBpbmxpbmUtYmxvY2sgIWltcG9ydGFudDtcblx0bWFyZ2luLWxlZnQ6IDkycHggIWltcG9ydGFudDtcblx0d2lkdGg6IDIxMHB0ICFpbXBvcnRhbnQ7XG5cblx0Ym94LXNpemluZzogYm9yZGVyLWJveCAhaW1wb3J0YW50O1xuXHRwYWRkaW5nLWxlZnQ6IDEwcHggIWltcG9ydGFudDtcbiAgICBwYWRkaW5nLXJpZ2h0OiA1cHggIWltcG9ydGFudDtcbn1cblxuLkJEVExMX1NlYXJjaF9Qb3B1cCBwIHtcbiAgICBmb250LWZhbWlseTogJ1NGUHJvVGV4dC1SZWd1bGFyJyAhaW1wb3J0YW50O1xuICAgIHdoaXRlLXNwYWNlOiBwcmUtd3JhcCAhaW1wb3J0YW50O1xuICAgIHdvcmQtd3JhcDogbm9ybWFsICFpbXBvcnRhbnQ7XG4gICAgbWFyZ2luOiAwcHggIWltcG9ydGFudDtcbiAgICBwYWRkaW5nOiAwcHggIWltcG9ydGFudDtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwIC5CRFRMTF90aXRsZSB7XG5cdGZvbnQtc2l6ZTogMTZweCAhaW1wb3J0YW50O1xuXHRtYXJnaW4tdG9wOiAxMnB4ICFpbXBvcnRhbnQ7XG59XG5cbi5CRFRMTF9TZWFyY2hfUG9wdXAgLkJEVExMX2Rlc2NyaXB0aW9uIHtcblx0Zm9udC1zaXplOiAxMnB4ICFpbXBvcnRhbnQ7XG5cdG1hcmdpbi10b3A6IDVweCAhaW1wb3J0YW50O1xufVxuXG4uQkRUTExfU2VhcmNoX1BvcHVwIC5CRFRMTF93ZWJfcHJvdGVjdGlvbiB7XG5cdGZvbnQtc2l6ZTogMTFweCAhaW1wb3J0YW50O1xuXHRtYXJnaW4tdG9wOiAxNXB4ICFpbXBvcnRhbnQ7XG5cdG1hcmdpbi1ib3R0b206IDEwcHggIWltcG9ydGFudDtcbn1cblxuLkJEVExMX1NlYXJjaF9Qb3B1cCAuQkRUTExfc3Ryb25nIHtcbiAgICBjb2xvcjogcmdiKDcsIDIwLCA0NSkgIWltcG9ydGFudDtcbn1cblxuLkJEVExMX1NlYXJjaF9Qb3B1cCAuQkRUTExfbWlsZCB7XG4gICAgY29sb3I6IHJnYig4MSwgOTEsIDEwOSkgIWltcG9ydGFudDtcbn1cblxuQG1lZGlhIChwcmVmZXJzLWNvbG9yLXNjaGVtZTogZGFyaykge1xuICAgIC5CRFRMTF9TZWFyY2hfUG9wdXAge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoNTYsIDY3LCA4NykgIWltcG9ydGFudDtcbiAgICAgICAgYm9yZGVyLWNvbG9yOiByZ2JhKDE2OSwgMTY5LCAxNjksIDAuOSkgIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICAuQkRUTExfU2VhcmNoX1BvcHVwID4gLkJEVExMX2xlZnRfYm94IHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDcsIDIwLCA0NSkgIWltcG9ydGFudDtcbiAgICB9XG5cbiAgICAuQkRUTExfU2VhcmNoX1BvcHVwIC5CRFRMTF9zdHJvbmcge1xuICAgICAgICBjb2xvcjogcmdiKDIzOSwgMjQxLCAyNDkpICFpbXBvcnRhbnQ7XG4gICAgfVxuICAgIFxuICAgIC5CRFRMTF9TZWFyY2hfUG9wdXAgLkJEVExMX21pbGQge1xuICAgICAgICBjb2xvcjogcmdiKDIxNywgMjE3LCAyMTcpICFpbXBvcnRhbnQ7XG4gICAgfVxufSJdLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+    .BDTLL_status {
+      cursor: pointer;
+      display: inline;
+      margin-right: 3px;
+      width: 16px;
+      height: 16px;
+    }
+
+    /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3BhZ2VzL2NvbXBvbmVudHMvdG9vbHRpcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixXQUFXO0lBQ1gsWUFBWTtBQUNoQiIsInNvdXJjZXNDb250ZW50IjpbIi5CRFRMTF9zdGF0dXMge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBkaXNwbGF5OiBpbmxpbmU7XG4gICAgbWFyZ2luLXJpZ2h0OiAzcHg7XG4gICAgd2lkdGg6IDE2cHg7XG4gICAgaGVpZ2h0OiAxNnB4O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+</head>
+
+
+<body data-controller="contents" data-namespace="contents" data-layout="marketing" data-action="show"
+  data-session="logged-out" data-role="user" data-language="ja" class="contents show ja  marketing_layout logged_out"
+  style="">
+
+
+  <div id="site_notice"></div>
+
+  <nav class="marketing_navi">
+    <section class="fixed-container">
+      <div id="header-bg" class="hidden"></div>
+      <div class="container_12">
+        <h1 class="logo icon">
+          <a href="https://iknow.jp/">iKnow!</a>
+        </h1>
+        <div class="top_links">
+          <li><a class="locale inside menu-item item-language" rel="nofollow" data-method="put"
+              href="https://iknow.jp/locale?language_code=en">English</a></li>
+
+          <a class="signup_link" href="https://iknow.jp/signup">フリートライアル！</a>
+          <a class="business" href="https://iknow.jp/business">ビジネスパートナー</a>
+          <a class="facebook" href="https://facebook.com/iKnowJP">
+            <img src="./iKnow!_files/facebook-a626f4f5389dece34d02ead0afa93af16a4a391cdd9ccebdf46db615523d1089.png">
+          </a> <a class="twitter" href="http://twitter.com/iKnowJP">
+            <img src="./iKnow!_files/twitter-c2003dfab3e9c70d2b52839c8f36fef20e9f5db2c9c22f7eb9109a9d5faa9467.png">
+          </a>
+        </div>
+        <ul class="top_inner_links">
+          <li><a href="https://iknow.jp/">iKnow! について</a></li>
+          <li><a href="https://iknow.jp/login">ログイン</a></li>
+        </ul>
+      </div>
+    </section>
+  </nav>
+
+
+  <div class="container_12">
+    <div class="content">
+      <div class="wrapper clearfix ">
+        <div class="primary-content alone">
+
+          <section class="content-container category" data-category-title="japanese">
+            <a id="japanese_anchor" class="shifted-anchor">&nbsp;</a>
+
+            <div class="category-link-wrapper" style="background-color:#e8f6fd;">
+              <header class="content-details">
+                <div class="details-primary">
+                  <img class="category-icon" style="background-color: #2e92cc;" src="./iKnow!_files/012v6r381s64jc.svg">
+
+                  <div class="details-primary-inner">
+                    <h2 class="ellipsis category-name">Japanese Core 6000</h2>
+
+                    <h3 class="category-catchphrase">Learn hiragana, katakana, and the top 6,000 words in Japanese.</h3>
+                  </div>
+                </div>
+
+                <aside class="details-secondary category-stats">
+                  <div class="stats-container">
+                    <div class="stat course-count">
+                      <div class="stat-datum">62</div>
+                      <div class="stat-label">コース</div>
+                    </div>
+
+                    <div class="stat series-count">
+                      <div class="stat-datum">7</div>
+                      <div class="stat-label">シリーズ</div>
+                    </div>
+
+                    <div class="navigator">
+                      ►
+                    </div>
+                  </div>
+                </aside>
+              </header>
+            </div>
+            <section class="content-wrapper">
+              <div class="content-primary">
+
+                <div class="category-description">
+                  <p>Learn the 6,000 most common Japanese words. Each item features an example sentence and audio from
+                    two popular Japanese voice talents. Master these 6,000 words to master Japanese!</p>
+                </div>
+
+                <div class="category-difficulty">
+                  <div class="stat category-level">
+                    <span class="stat-label">レベル:</span>
+                    <strong class="stat-datum">
+                      <div class="difficulty-level" data-level="5">初級–上級</div>
+                    </strong>
+                  </div>
+                </div>
+
+                <section class="diagnostic-container">
+                  <a class="btn btn-bar" rel="app" href="https://iknow.jp/diagnostics/2">iKnow! コース診断</a>
+                  <p class="diagnostic-description">iKnow! コース診断で、自分のレベルに合わせたコースをみつけましょう。</p>
+                </section>
+              </div>
+
+              <aside class="content-secondary">
+                <div>
+                  <figure class="category-accent"
+                    style="background-image: url(https://assets3.iknow.jp/_assets/content/categories/japanese_core_image-60f5ee19646848539c948c3f250e36c12d168da8450ab95a0cf1da1e26db4e0c.png);">
+                  </figure>
+                </div>
+              </aside>
+            </section>
+
+
+            <div class="series_list clearfix shiv-border-box-sizing">
+              <div class="series_container">
+                <section class="series_divider primary_content shiv-border-box-sizing">
+                  <figure data-series-id="3322" class="series_box shiv-border-box-sizing">
+                    <header class="series_details">
+
+                      <div class="series_name">
+                        <h4 class="ellipsis">
+                          <a title="Master Hiragana &amp; Katakana"
+                            href="https://iknow.jp/content/japanese/series/3322">Master Hiragana &amp; Katakana</a>
+                        </h4>
+
+                        <div class="difficulty-level" data-level="1">初級</div>
+                      </div>
+
+                      <aside class="secondary_details">
+
+                      </aside>
+                    </header>
+
+                    <section class="series_description">
+                      <figure class="content-figure rounded" data-size="small"
+                        style="background-image: url(https://transcode-v2.app.engoo.com/t/aHR0cHM6Ly9hc3NldHMwLmlrbm93LmpwL2Fzc2V0cy91c2Vycy9sYW1iaXRpb24vZDUzNjFlMm0uanBn/d5361e2m_140x140.jpg);">
+                      </figure>
+
+                      <p>The Japanese written language is composed of three writing systems: kanji, hiragana, and
+                        katakana.</p>
+
+
+                      <p>Kanji are the characters borrowed from Chinese. These number in the tens of thousands, but to
+                        read Japanese you really only to need around 2,000 kanji.</p>
+
+
+                      <p>Hiragana and katakana are both phonetic systems, each numbering 46 basic symbols, or letters.
+                        Each hiragana symbol has an exact corresponding katakana symbol and vice versa.</p>
+
+
+                      <p>This series covers the basic hiragana and katakana symbols in addition to all the modified
+                        forms (those with diacritic marks and the c<a href="https://iknow.jp/series/3322">さらに見る</a></p>
+
+                    </section>
+                  </figure>
+                  <figure data-series-id="3423" class="series_box shiv-border-box-sizing">
+                    <header class="series_details">
+
+                      <div class="series_name">
+                        <h4 class="ellipsis">
+                          <a title="Japanese Core 1000" href="https://iknow.jp/content/japanese/series/3423">Japanese
+                            Core 1000</a>
+                        </h4>
+
+                        <div class="difficulty-level" data-level="2">初級–初中級</div>
+                      </div>
+
+                      <aside class="secondary_details">
+
+                      </aside>
+                    </header>
+
+                    <section class="series_description">
+                      <figure class="content-figure rounded" data-size="small"
+                        style="background-image: url(https://transcode-v2.app.engoo.com/t/aHR0cHM6Ly9hc3NldHMxLmlrbm93LmpwL2Fzc2V0cy91c2Vycy9TbWFydC5mbS83bDZsYTA0am9icDgwLmpwZw==/7l6la04jobp80_140x140.jpg);">
+                      </figure>
+
+                      <p>This series of ten courses covers the top 1,000 most commonly used words in Japanese.</p>
+
+
+                      <p>If you’re new to studying Japanese, we recommend you first read our <a
+                          href="http://iknow.jp/guides/ja">Guide to Japanese</a>. This will explain the basics of
+                        inputting Japanese.</p>
+
+
+                      <p>Each item in this series has an example sentence with both audio and image. The audio was
+                        recorded by two well-known Japanese voice talents: Yuko Kaida and Yukitoshi Tokumoto.</p>
+
+
+                      <p>Mastering these 1,000 items and sentences will give you the vocabulary and sentence patterns to
+                        function in most everyday situations.</p>
+
+                    </section>
+                  </figure>
+                </section>
+
+                <section class="series_divider secondary_content">
+                  <div class="course_container">
+                    <ul class="courses shiv-border-box-sizing">
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3322" data-goal-id="24666">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Master Hiragana" href="https://iknow.jp/courses/24666">Master Hiragana</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="1">初級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3322" data-goal-id="24667">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Master Katakana" href="https://iknow.jp/courses/24667">Master Katakana</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="1">初級</div>
+                        </aside>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="course_container">
+                    <ul class="courses shiv-border-box-sizing">
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3423" data-goal-id="566921">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 1000: Step 1" href="https://iknow.jp/courses/566921">Japanese Core
+                            1000: Step 1</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="1">初級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3423" data-goal-id="566922">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 1000: Step 2" href="https://iknow.jp/courses/566922">Japanese Core
+                            1000: Step 2</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="1">初級</div>
+                        </aside>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <hr class="series_spacer">
+              </div>
+              <div class="series_container">
+                <section class="series_divider primary_content shiv-border-box-sizing">
+                  <figure data-series-id="3424" class="series_box shiv-border-box-sizing">
+                    <header class="series_details">
+
+                      <div class="series_name">
+                        <h4 class="ellipsis">
+                          <a title="Japanese Core 2000" href="https://iknow.jp/content/japanese/series/3424">Japanese
+                            Core 2000</a>
+                        </h4>
+
+                        <div class="difficulty-level" data-level="2">初中級</div>
+                      </div>
+
+                      <aside class="secondary_details">
+
+                      </aside>
+                    </header>
+
+                    <section class="series_description">
+                      <figure class="content-figure rounded" data-size="small"
+                        style="background-image: url(https://transcode-v2.app.engoo.com/t/aHR0cHM6Ly9hc3NldHMxLmlrbm93LmpwL2Fzc2V0cy91c2Vycy9TbWFydC5mbS8xbGZhYXRiZTc0ZDNzLmpwZw==/1lfaatbe74d3s_140x140.jpg);">
+                      </figure>
+
+                      <p>The Japanese Core 2000 covers the next 1,000 most important words in Japanese.</p>
+
+
+                      <p>We recommend you first read our <a href="http://iknow.jp/guides/ja">Guide to Japanese</a>. This
+                        will explain the basics of inputting Japanese.</p>
+
+
+                      <p>If your Japanese is already at an intermediate level, you can start here instead of in the Core
+                        1000. Mastering all the items in the Core 1000 and Core 2000 will give you a very strong
+                        foundation in Japanese. Not only will you understand dialogue in most basic situations, you’ll
+                        also start to develop skills for reading on your own.</p>
+
+                    </section>
+                  </figure>
+                  <figure data-series-id="3425" class="series_box shiv-border-box-sizing">
+                    <header class="series_details">
+
+                      <div class="series_name">
+                        <h4 class="ellipsis">
+                          <a title="Japanese Core 3000" href="https://iknow.jp/content/japanese/series/3425">Japanese
+                            Core 3000</a>
+                        </h4>
+
+                        <div class="difficulty-level" data-level="3">中級</div>
+                      </div>
+
+                      <aside class="secondary_details">
+
+                      </aside>
+                    </header>
+
+                    <section class="series_description">
+                      <figure class="content-figure rounded" data-size="small"
+                        style="background-image: url(https://transcode-v2.app.engoo.com/t/aHR0cHM6Ly9hc3NldHMzLmlrbm93LmpwL2Fzc2V0cy91c2Vycy9TbWFydC5mbS82bDdtNjBicWY4ZjhnLmpwZw==/6l7m60bqf8f8g_140x140.jpg);">
+                      </figure>
+
+                      <p>The Japanese Core 3000 covers the 3rd 1,000 most commonly used words in Japanese.</p>
+
+
+                      <p>We recommend you first read our <a href="http://iknow.jp/guides/ja">Guide to Japanese</a>. This
+                        will explain the basics of inputting Japanese.</p>
+
+
+                      <p>Each item in this series has an example sentence with professionally recorded audio. The Core
+                        3000 is suitable for intermediate and upper-intermediate students of Japanese. Mastering all
+                        3,000 items and sentences of the Japanese Core 1000, 2000, and 3000 will put you in a position
+                        to start reading Japanese without the assistance of dictionaries.</p>
+
+                    </section>
+                  </figure>
+                </section>
+
+                <section class="series_divider secondary_content">
+                  <div class="course_container">
+                    <ul class="courses shiv-border-box-sizing">
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594768">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 1" href="https://iknow.jp/courses/594768">Japanese Core
+                            2000: Step 1</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594770">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 2" href="https://iknow.jp/courses/594770">Japanese Core
+                            2000: Step 2</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594771">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 3" href="https://iknow.jp/courses/594771">Japanese Core
+                            2000: Step 3</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594772">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 4" href="https://iknow.jp/courses/594772">Japanese Core
+                            2000: Step 4</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594773">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 5" href="https://iknow.jp/courses/594773">Japanese Core
+                            2000: Step 5</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594774">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 6" href="https://iknow.jp/courses/594774">Japanese Core
+                            2000: Step 6</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594775">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 7" href="https://iknow.jp/courses/594775">Japanese Core
+                            2000: Step 7</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594777">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 8" href="https://iknow.jp/courses/594777">Japanese Core
+                            2000: Step 8</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594778">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 9" href="https://iknow.jp/courses/594778">Japanese Core
+                            2000: Step 9</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3424" data-goal-id="594780">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 2000: Step 10" href="https://iknow.jp/courses/594780">Japanese Core
+                            2000: Step 10</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="2">初中級</div>
+                        </aside>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="course_container">
+                    <ul class="courses shiv-border-box-sizing">
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615865">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 1" href="https://iknow.jp/courses/615865">Japanese Core
+                            3000: Step 1</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615866">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 2" href="https://iknow.jp/courses/615866">Japanese Core
+                            3000: Step 2</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615867">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 3" href="https://iknow.jp/courses/615867">Japanese Core
+                            3000: Step 3</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615869">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 4" href="https://iknow.jp/courses/615869">Japanese Core
+                            3000: Step 4</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615871">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 5" href="https://iknow.jp/courses/615871">Japanese Core
+                            3000: Step 5</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615872">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 6" href="https://iknow.jp/courses/615872">Japanese Core
+                            3000: Step 6</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615873">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 7" href="https://iknow.jp/courses/615873">Japanese Core
+                            3000: Step 7</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615874">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 8" href="https://iknow.jp/courses/615874">Japanese Core
+                            3000: Step 8</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615876">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 9" href="https://iknow.jp/courses/615876">Japanese Core
+                            3000: Step 9</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3425" data-goal-id="615877">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 3000: Step 10" href="https://iknow.jp/courses/615877">Japanese Core
+                            3000: Step 10</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+
+                    </ul>
+                  </div>
+                </section>
+
+                <hr class="series_spacer">
+              </div>
+              <div class="series_container">
+                <section class="series_divider primary_content shiv-border-box-sizing">
+                  <figure data-series-id="3426" class="series_box shiv-border-box-sizing">
+                    <header class="series_details">
+
+                      <div class="series_name">
+                        <h4 class="ellipsis">
+                          <a title="Japanese Core 4000" href="https://iknow.jp/content/japanese/series/3426">Japanese
+                            Core 4000</a>
+                        </h4>
+
+                        <div class="difficulty-level" data-level="4">中級–中上級</div>
+                      </div>
+
+                      <aside class="secondary_details">
+
+                      </aside>
+                    </header>
+
+                    <section class="series_description">
+                      <figure class="content-figure rounded" data-size="small"
+                        style="background-image: url(https://transcode-v2.app.engoo.com/t/aHR0cHM6Ly9hc3NldHMyLmlrbm93LmpwL2Fzc2V0cy91c2Vycy9TbWFydC5mbS82bDhsMjAwanBmcW1rLmpwZw==/6l8l200jpfqmk_140x140.jpg);">
+                      </figure>
+
+                      <p>The Japanese Core 4000 covers the 4th 1,000 most commonly used words in Japanese.</p>
+
+
+                      <p>We recommend you first read our <a href="http://iknow.jp/guides/ja">Guide to Japanese</a>. This
+                        will explain the basics of inputting Japanese.</p>
+
+
+                      <p>The Core 4000 is suitable for upper-intermediate students of Japanese. Mastering all 4,000
+                        items and sentences of the Japanese Core 1000, 2000, 3000, and 4000 will allow you to function
+                        independently in most contexts.</p>
+
+                    </section>
+                  </figure>
+                  <figure data-series-id="3427" class="series_box shiv-border-box-sizing">
+                    <header class="series_details">
+
+                      <div class="series_name">
+                        <h4 class="ellipsis">
+                          <a title="Japanese Core 5000" href="https://iknow.jp/content/japanese/series/3427">Japanese
+                            Core 5000</a>
+                        </h4>
+
+                        <div class="difficulty-level" data-level="5">中上級–上級</div>
+                      </div>
+
+                      <aside class="secondary_details">
+
+                      </aside>
+                    </header>
+
+                    <section class="series_description">
+                      <figure class="content-figure rounded" data-size="small"
+                        style="background-image: url(https://transcode-v2.app.engoo.com/t/aHR0cHM6Ly9hc3NldHMxLmlrbm93LmpwL2Fzc2V0cy91c2Vycy9TbWFydC5mbS8ybDVtZDA5bjc0YTJvLmpwZw==/2l5md09n74a2o_140x140.jpg);">
+                      </figure>
+
+                      <p>The Japanese Core 5000 covers the 5th 1,000 most commonly used words in Japanese.</p>
+
+
+                      <p>We recommend you first read our <a href="http://iknow.jp/guides/ja">Guide to Japanese</a>. This
+                        will explain the basics of inputting Japanese.</p>
+
+
+                      <p>The Core 5000 is designed for advanced students of Japanese who are confident in their speaking
+                        and reading skills, but who want to dive deeper into Japanese literature.</p>
+
+                    </section>
+                  </figure>
+                </section>
+
+                <section class="series_divider secondary_content">
+                  <div class="course_container">
+                    <ul class="courses shiv-border-box-sizing">
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615947">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 1" href="https://iknow.jp/courses/615947">Japanese Core
+                            4000: Step 1</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615949">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 2" href="https://iknow.jp/courses/615949">Japanese Core
+                            4000: Step 2</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615950">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 3" href="https://iknow.jp/courses/615950">Japanese Core
+                            4000: Step 3</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615951">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 4" href="https://iknow.jp/courses/615951">Japanese Core
+                            4000: Step 4</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615953">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 5" href="https://iknow.jp/courses/615953">Japanese Core
+                            4000: Step 5</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="3">中級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615954">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 6" href="https://iknow.jp/courses/615954">Japanese Core
+                            4000: Step 6</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615955">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 7" href="https://iknow.jp/courses/615955">Japanese Core
+                            4000: Step 7</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615957">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 8" href="https://iknow.jp/courses/615957">Japanese Core
+                            4000: Step 8</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615958">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 9" href="https://iknow.jp/courses/615958">Japanese Core
+                            4000: Step 9</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3426" data-goal-id="615959">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 4000: Step 10" href="https://iknow.jp/courses/615959">Japanese Core
+                            4000: Step 10</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="course_container">
+                    <ul class="courses shiv-border-box-sizing">
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616077">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 1" href="https://iknow.jp/courses/616077">Japanese Core
+                            5000: Step 1</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616078">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 2" href="https://iknow.jp/courses/616078">Japanese Core
+                            5000: Step 2</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616079">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 3" href="https://iknow.jp/courses/616079">Japanese Core
+                            5000: Step 3</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616080">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 4" href="https://iknow.jp/courses/616080">Japanese Core
+                            5000: Step 4</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616081">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 5" href="https://iknow.jp/courses/616081">Japanese Core
+                            5000: Step 5</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616082">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 6" href="https://iknow.jp/courses/616082">Japanese Core
+                            5000: Step 6</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="4">中上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616083">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 7" href="https://iknow.jp/courses/616083">Japanese Core
+                            5000: Step 7</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616084">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 8" href="https://iknow.jp/courses/616084">Japanese Core
+                            5000: Step 8</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616085">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 9" href="https://iknow.jp/courses/616085">Japanese Core
+                            5000: Step 9</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3427" data-goal-id="616086">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 5000: Step 10" href="https://iknow.jp/courses/616086">Japanese Core
+                            5000: Step 10</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+
+                    </ul>
+                  </div>
+                </section>
+
+                <hr class="series_spacer">
+              </div>
+              <div class="series_container">
+                <section class="series_divider primary_content shiv-border-box-sizing">
+                  <figure data-series-id="3428" class="series_box shiv-border-box-sizing">
+                    <header class="series_details">
+
+                      <div class="series_name">
+                        <h4 class="ellipsis">
+                          <a title="Japanese Core 6000" href="https://iknow.jp/content/japanese/series/3428">Japanese
+                            Core 6000</a>
+                        </h4>
+
+                        <div class="difficulty-level" data-level="5">上級</div>
+                      </div>
+
+                      <aside class="secondary_details">
+
+                      </aside>
+                    </header>
+
+                    <section class="series_description">
+                      <figure class="content-figure rounded" data-size="small"
+                        style="background-image: url(https://transcode-v2.app.engoo.com/t/aHR0cHM6Ly9hc3NldHMwLmlrbm93LmpwL2Fzc2V0cy91c2Vycy9TbWFydC5mbS81bGNsZTA3azN0NGRvLmpwZw==/5lcle07k3t4do_140x140.jpg);">
+                      </figure>
+
+                      <p>The Japanese Core 6000 covers the 6th 1000 most commonly used words in Japanese.</p>
+
+
+                      <p>We recommend you first read our <a href="http://iknow.jp/guides/ja">Guide to Japanese</a>. This
+                        will explain the basics of inputting Japanese.</p>
+
+
+                      <p>The Core 6000 is designed to help advanced students reach a level where they can read difficult
+                        materials on their own. Students who master all 6,000 words in the Japanese Core category will
+                        be well on their way to mastering Japanese!</p>
+
+                    </section>
+                  </figure>
+                </section>
+
+                <section class="series_divider secondary_content">
+                  <div class="course_container">
+                    <ul class="courses shiv-border-box-sizing">
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598434">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 1" href="https://iknow.jp/courses/598434">Japanese Core
+                            6000: Step 1</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598432">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 2" href="https://iknow.jp/courses/598432">Japanese Core
+                            6000: Step 2</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598431">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 3" href="https://iknow.jp/courses/598431">Japanese Core
+                            6000: Step 3</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598430">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 4" href="https://iknow.jp/courses/598430">Japanese Core
+                            6000: Step 4</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598427">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 5" href="https://iknow.jp/courses/598427">Japanese Core
+                            6000: Step 5</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598426">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 6" href="https://iknow.jp/courses/598426">Japanese Core
+                            6000: Step 6</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598425">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 7" href="https://iknow.jp/courses/598425">Japanese Core
+                            6000: Step 7</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598424">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 8" href="https://iknow.jp/courses/598424">Japanese Core
+                            6000: Step 8</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598423">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 9" href="https://iknow.jp/courses/598423">Japanese Core
+                            6000: Step 9</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+                      <li class="series_course shiv-border-box-sizing" data-goal-state="unenrolled"
+                        data-series-id="3428" data-goal-id="598422">
+                        <div class="details shiv-border-box-sizing">
+                          <a title="Japanese Core 6000: Step 10" href="https://iknow.jp/courses/598422">Japanese Core
+                            6000: Step 10</a>
+                          <div class="course-state course-state-unenrolled">
+                            <div title="完了コース" class="course-state-accent course-state-accent-completed"></div>
+                            <div title="学習中コース" class="course-state-accent course-state-accent-enrolled"></div>
+                          </div>
+                        </div>
+
+                        <aside class="actions shiv-border-box-sizing">
+                          <div class="difficulty-level" data-level="5">上級</div>
+                        </aside>
+                      </li>
+
+                    </ul>
+                  </div>
+                </section>
+
+                <hr class="series_spacer">
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container_12">
+    <footer class="page_footer">
+      <section class="clearfix big_footer">
+        <dl>
+          <dt>製品・サービス</dt>
+          <dd><a href="https://iknow.jp/">iKnow!</a></dd>
+          <dd><a href="https://iknow.jp/business">法人のお客様</a></dd>
+          <dd><a href="https://iknow.jp/school">教育機関のお客様</a></dd>
+          <dd><a href="https://iknow.jp/mobile_app">スマホ・タブレット</a></dd>
+          <dd><a href="http://iknow.jp/popup_dictionary_extension">ポップアップ辞書</a></dd>
+        </dl>
+        <dl>
+          <dt>コミュニティー</dt>
+          <dd>
+            <a href="https://iknow.jp/user_courses">みんなのコース</a>
+          </dd>
+          <dd>
+            <a target="_blank" href="http://blog.iknow.jp/posts">iKnow! ブログ</a>
+          </dd>
+          <dd>
+            <a target="_blank" href="http://twitter.com/#!/iKnowJP"><img alt="Link to Twitter."
+                src="./iKnow!_files/twitter_icon-bcc121f5f33ac6ee504e1df343a60190d2445aabad2926614d8d57d9884509c8.png"></a>
+            <a target="_blank" href="http://twitter.com/#!/iKnowJP">Twitter</a>
+          </dd>
+          <dd>
+            <a target="_blank" href="https://facebook.com/iKnowJP"><img alt="Link to Facebook."
+                src="./iKnow!_files/facebook_icon-046bc6ed18dd9eceb112c95e3e494c5548876c675a4c1ea293d364ca25547743.png"></a>
+
+            <a target="_blank" href="https://facebook.com/iKnowJP">Facebook</a>
+          </dd>
+          <dd><a href="https://iknow.jp/account/beta_signup">iKnow! ベータ</a></dd>
+        </dl>
+        <dl>
+          <dt>ご利用方法について</dt>
+          <dd><a href="https://iknow.jp/tour">iKnow! ガイド</a></dd>
+          <dd><a href="https://iknow.jp/custom">カスタムコースガイド</a></dd>
+          <dd><a href="https://iknow.jp/guides/cn">中国語入力ガイド</a></dd>
+        </dl>
+        <dl class="last">
+          <dt>サポート</dt>
+          <dd><a target="_blank" href="https://support.iknow.jp/hc/ja">サポートとFAQ</a></dd>
+          <dd><a href="https://iknow.jp/env_check">ご利用環境チェック</a></dd>
+          <dd><a href="https://iknow.jp/discount_code/new">クーポンの利用</a></dd>
+        </dl>
+      </section>
+      <div class="copyright">
+        <small>Copyright © <a target="_blank" href="https://dmm-corp.com/company/">DMM</a> All Rights Reserved</small>
+
+        <ul>
+          <li><a href="https://dmm-corp.com/company/">運営会社</a></li>
+          <li><a href="https://app.engoo.com/jobs">採用情報</a></li>
+          <li><a href="https://iknow.jp/policy">利用規約</a></li>
+          <li><a href="https://iknow.jp/privacy">プライバシーポリシー</a></li>
+          <li class="last"><a href="https://iknow.jp/policy/commercial">特定商取引法に基づく表記</a></li>
+        </ul>
+
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="./iKnow!_files/application-75c888ca9dbff7184477a3b4521052003cb979bd74e9db84dbc7cc3eb88b8a71.js"></script>
+  <script src="./iKnow!_files/bundle-ed59443f586dc1f82de1.js"></script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    var google_conversion_id = 1003066537;
+    var google_conversion_language = "en";
+    var google_conversion_format = "3";
+    var google_conversion_color = "ffffff";
+    var google_conversion_label = "YeFyCJfI-AIQqamm3gM";
+    var google_conversion_value = 0;
+  </script>
+  <script type="text/javascript" src="./iKnow!_files/f(1).txt">
+  </script>
+  <noscript>
+    <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt=""
+        src="https://www.googleadservices.com/pagead/conversion/1003066537/?value=0&amp;label=YeFyCJfI-AIQqamm3gM&amp;guid=ON&amp;script=0" />
+    </div>
+  </noscript>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.notification.setup([])
+    });
+  </script>
+
+  <script>
+    // Fix header position when #site_notice contains something.
+    $(function () {
+      var $window = $(window);
+      var $header = $('.marketing_navi .fixed-container');
+      var headerOffset;
+
+      // do nothing when there is no fixed header.
+      if ($header.length === 0) {
+        return;
+      }
+
+      checkHeaderOffset();
+      return;
+
+
+      function checkHeaderOffset() {
+        var offsetTop = $header.offset().top;
+        var scrollTop = $window.scrollTop();
+
+        headerOffset = Math.floor(offsetTop - scrollTop);
+
+        if (headerOffset === 0) {
+          // we need to check again because #site_notice may be updated later.
+          setTimeout(checkHeaderOffset, 1000);
+          return;
+        }
+
+        headerOffset = Math.floor(offsetTop - scrollTop);
+        $window.on('scroll', onScroll);
+        onScroll();
+      }
+
+
+      function onScroll() {
+        var scrollTop = Math.max($window.scrollTop(), 0);
+        var headerTop = Math.max(headerOffset - scrollTop, 0);
+
+        $header.css({
+          top: headerTop
+        });
+      }
+    });
+  </script>
+
+  <iframe id="app_frame" style="display:none" frameborder="0" src="./iKnow!_files/saved_resource.html"></iframe>
+
+</body>
+
+</html>
