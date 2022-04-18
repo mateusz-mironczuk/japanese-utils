@@ -1,5 +1,5 @@
 import fsPromises from 'fs/promises'
-import generateCoreDeck from './generate-core-deck.js'
+import * as generator from './generator.js'
 import * as paths from './test-setup/paths.js'
 import server from './test-setup/server.js'
 
@@ -14,9 +14,9 @@ afterAll(() => {
 
 test('Generates a core 1000 deck', async () => {
   const core = 1000
-  await generateCoreDeck(core, paths.tempDirectoryPath)
+  await generator.generateDeck(core, paths.tempDirectoryPath)
     //retries after a network error
-    .catch(_error => generateCoreDeck(core, paths.tempDirectoryPath))
+    .catch(_error => generator.generateDeck(core, paths.tempDirectoryPath))
 
   const actualDeckPath = paths.getActualDeckPath(core)
   const actualContents = await fsPromises.readFile(actualDeckPath, 'utf-8')

@@ -1,3 +1,4 @@
+import * as generator from '../generator.js'
 import path from 'path'
 import * as pathUtils from 'path'
 import url from 'url'
@@ -32,6 +33,6 @@ export function getExpectedDeckPath(core) {
 }
 
 function getDeckPath(directoryPath, core) {
-  const fileName = `core ${core}.csv`
+  const fileName = generator.getFileName(core)
   return path.join(directoryPath, fileName)
 }

@@ -1,9 +1,9 @@
-import generateCoreDeck from './modules/generate-core-deck/generate-core-deck.js'
+import * as generator from './modules/generate-core-deck/generator.js'
 
 const core = process.argv[2]
 
 if (!core) {
   console.error('You have to specify a lesson\'s core number.')
 } else {
-  generateCoreDeck(core, 'decks')
+  generator.generateDeck(core, 'decks')
 }
