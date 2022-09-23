@@ -1,5 +1,5 @@
 # japanese-utils
-Various utilities to prepare data for apps which helps me learn Japanese.
+Various utilities to prepare data for apps which help me learn Japanese.
 
 ## Utilities
 The repository contains following utility scripts:
