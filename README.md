@@ -24,7 +24,7 @@ Generates a deck based on [iKnow.jp](https://iknow.jp/content/japanese) and
 Generates an Anki deck to learn kanji.
 
 #### Usage
-1. Obtain a legal [kradfile](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project)
+1. Obtain a legal [kradfile](http://www.edrdg.org/krad/kradinf.html)
     file and a legal [kanjidic2.xml](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project)
     file.
 2. Run `node src/generate-kanji-deck.js <a path to the kanjidic2.xml> <a path to the kradfile>`.
