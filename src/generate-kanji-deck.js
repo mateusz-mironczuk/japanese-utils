@@ -86,5 +86,10 @@ function generateCSV(kanjis, decompositions) {
 }
 
 function generateCSVEntry(entry, decompositions) {
-  return `${entry.kanji};${entry.meaning};${decompositions[entry.kanji]}`
+  return [
+    entry.kanji,
+    entry.meaning,
+    `${decompositions[entry.kanji]} (${entry.id})`
+  ]
+    .join(';')
 }
