@@ -4,8 +4,8 @@ Various utilities to prepare data for apps which help me learn Japanese.
 ## Utilities
 The repository contains following utility scripts:
 - [generate-core-deck](#generate-core-deck)
-- [generate-kanji-deck](#generate-kanji-deck)
 - [generate-examples-deck](#generate-examples-deck)
+- [generate-kanji-deck](#generate-kanji-deck)
 - [generate-kanji-files](#generate-kanji-files)
 - [filter-kanji-svg](#filter-kanji-svg)
 - [find-equals-in-decks](#find-equals-in-decks)
@@ -20,17 +20,6 @@ Generates a deck based on [iKnow.jp](https://iknow.jp/content/japanese) and
 2. The generated deck will be saved in a `decks` directory inside a current
     working directory.
 
-### generate-kanji-deck
-Generates an Anki deck to learn kanji.
-
-#### Usage
-1. Obtain a legal [kradfile](http://www.edrdg.org/krad/kradinf.html)
-    file and a legal [kanjidic2.xml](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project)
-    file.
-2. Run `node src/generate-kanji-deck.js <a path to the kanjidic2.xml> <a path to the kradfile>`.
-3. The generated file will be saved as  `_kanji-deck.csv` in a current working
-    directory.
-
 ### generate-examples-deck
 Generates an examples deck based on [iKnow.jp](https://iknow.jp/content/japanese).
 
@@ -39,6 +28,17 @@ Generates an examples deck based on [iKnow.jp](https://iknow.jp/content/japanese
     - `<core>` is a number describing an iKnow.jp lesson.
 2. The generated deck will be saved in a `decks` directory inside a current
     working directory.
+
+### generate-kanji-deck
+Generates an Anki deck to learn kanji.
+
+#### Usage
+1. Obtain a legal [kradfile](http://www.edrdg.org/krad/kradinf.html)
+    file and a legal [kanjidic2.xml](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project)
+    file.
+2. Run `node src/generate-kanji-deck.js <a path to the kanjidic2.xml> <a path to the kradfile>`.
+3. The generated file will be saved as `_kanji-deck.csv` in a current working
+    directory.
 
 ### generate-kanji-files
 Generates kanji files for the `add-kanji-info` project.
